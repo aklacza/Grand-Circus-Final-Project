@@ -7,7 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title></title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="main.css">
+<!--     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet"> -->
+    
+<!--     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> -->
+<link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
@@ -33,7 +36,7 @@
       <div class="container">
         <h1>Find a Boat near you!</h1>
         <p>Rent a Boat from local hosts in all of Michigan's most popular marinas!</p>
-        <a href="#">Learn More</a>
+        <a href="#">Learn more</a>
       </div>
     </div> 
 
@@ -77,12 +80,13 @@
       <div class="col-md-4">
       <h3>Host</h3>
       <p>Renting out your unused boat could pay your bills or fund your next vacation.</p>
-      <p><a href="#">Learn more about hosting</a></p>
+      <p><a href="#">Learn more about becoming a Host!</a></p>
       </div>
       <div class="col-md-4">
       <h3>Trust and Safety</h3>
-      <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
+      <p>From Verified ID to our customer support team, we've got your back!</p>
       <p><a href="#">Learn about trust at Boat Buddy</a></p>
+      <a href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook of Michigan Boating Laws</a>
       </div>
      </div> 
     </div>
