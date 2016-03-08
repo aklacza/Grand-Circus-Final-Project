@@ -1,6 +1,6 @@
 .nav a {
   color: #5a5a5a;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: bold;
   padding: 14px 10px;
   text-transform: uppercase;
@@ -19,7 +19,8 @@
 
 .jumbotron .container {
   position: relative;
-  top:100px;
+  top:10px;
+  font-weight:bold;
 }
 
 .jumbotron h1 {
@@ -30,8 +31,9 @@
 }
 
 .jumbotron p {
-  font-size: 20px;
+  font-size: 24px;
   color: #fff;
+  font-weight: bold;
 }
 
 .boat-guides {

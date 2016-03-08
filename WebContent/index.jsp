@@ -7,9 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title></title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<!--     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet"> -->
-    
-<!--     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css"> -->
+
 <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -21,13 +19,13 @@
 <div class="nav">
       <div class="container">
         <ul class= "pull-left">
-          <li><a href="#">Boat Buddy</a></li>
-          <li><a href="#">Host</a></li>
+          <li><a href="boatBuddy.jsp">Boat Buddy</a></li>
+          <li><a href="host.jsp">Host</a></li>
         </ul>
         <ul class="pull-right">
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Log In</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="signup.jsp">Sign Up</a></li>
+          <li><a href="login.jsp">Log In</a></li>
+          <li><a href="help.jsp">Help</a></li>
         </ul>
       </div>
     </div>
@@ -36,14 +34,14 @@
       <div class="container">
         <h1>Find a Boat near you!</h1>
         <p>Rent a Boat from local hosts in all of Michigan's most popular marinas!</p>
-        <a href="#">Learn more</a>
+        <a href="learnmore.jsp">Learn more</a>
       </div>
     </div> 
 
     <div class="boat-guides">
         <div class="container">
         <h2>Sneak peak to your next weekend adventure!</h2>
-        <p>Not sure which to pick? Jump to our Host section!</p>
+        <p>Not sure which to pick? Go to our learn more section!</p>
             <div class="row">
             <div class="col-md-4">
                 <div class="thumbnail">
@@ -80,12 +78,12 @@
       <div class="col-md-4">
       <h3>Host</h3>
       <p>Renting out your unused boat could pay your bills or fund your next vacation.</p>
-      <p><a href="#">Learn more about becoming a Host!</a></p>
+      <p><a href="host.jsp">Learn more about becoming a Host!</a></p>
       </div>
       <div class="col-md-4">
       <h3>Trust and Safety</h3>
       <p>From Verified ID to our customer support team, we've got your back!</p>
-      <p><a href="#">Learn about trust at Boat Buddy</a></p>
+      <p><a href="help.jsp">Learn about trust at Boat Buddy</a></p>
       <a href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook of Michigan Boating Laws</a>
       </div>
      </div> 
