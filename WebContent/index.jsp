@@ -14,18 +14,18 @@
 <body>
 
 <!-- <h1>Welcome to Boat Buddy!</h1> -->
-<!-- <a href="welcome.html">Welcome page</a> -->
+<!-- <a href="welcome.html">Welcome page</a>  -->
 
 <div class="nav">
       <div class="container">
         <ul class= "pull-left">
           <li><a href="boatBuddy.jsp">Boat Buddy</a></li>
-          <li><a href="host.jsp">Host</a></li>
+          <li><a href="host.html">Host</a></li>
         </ul>
         <ul class="pull-right">
-          <li><a href="signup.jsp">Sign Up</a></li>
-          <li><a href="login.jsp">Log In</a></li>
-          <li><a href="help.jsp">Help</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="help.html">Help</a></li>
         </ul>
       </div>
     </div>

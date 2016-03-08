@@ -12,5 +12,25 @@ public class ControllerClass1 {
 	public ModelAndView helloWorld() {
 		return new ModelAndView("welcome", "message", "Hello World");
 	}
+	
+	@RequestMapping("/host")
+	public ModelAndView hostView() {
+		return new ModelAndView("host", "", "");
+	}
+	
+	@RequestMapping("/signup")
+	public ModelAndView signupView() {
+		return new ModelAndView("signup", "", "");
+	}
+	
+	@RequestMapping("/login")
+	public ModelAndView loginView() {
+		return new ModelAndView("login", "", "");
+	}
+	
+	@RequestMapping("/help")
+	public ModelAndView helpView() {
+		return new ModelAndView("help", "", "");
+	}
 
 }
