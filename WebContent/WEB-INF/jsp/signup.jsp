@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Boat Buddy Sign-up</title>
+<link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
 </head>
 <body>
 
@@ -16,6 +17,7 @@ Sign up for Boat Buddy as a Shipmate:
     First name:<br>
      <input type="text" name="fname" size="35" required/><br>
     Last name: <br><input type="text" name="lname" size="35" required/><br>
+    Password: <br><input type="text" name="password" size="35" required/><br>
     E-mail: <br><input type="text" name="email" size="35" required/><br>
     Address: <br><input type="text" name="address" size="35"required/><br>
     City: <br><input type="text" name="city" size="35" required/><br>
@@ -39,6 +41,7 @@ $( "#signupForm" ).validate({
     }
   }
 });
+
 </script>
 
 </body>
