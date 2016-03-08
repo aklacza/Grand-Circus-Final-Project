@@ -11,21 +11,35 @@
 Sign up for Boat Buddy as a Shipmate:
 
 <br>
-<form action="" method="GET">
-	First name:<br>
-	 <input type="text" name="fname" size="35"/><br>
-	Last name: <br><input type="text" name="lname" size="35"/><br>
-	E-mail: <br><input type="text" name="email" size="35"/><br>
-	Address: <br><input type="text" name="address" size="35"/><br>
-	City: <br><input type="text" name="city" size="35"/><br>
-	State: <br><input type="text" name="state" size="35"/><br>
-	Zip code: <br><input type="text" name="zip" size="35"/><br>
-	Brief profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
-	
-	<input type="submit" name="Submit" />
-	
+
+<form id ="signupForm" action="" method="GET">
+    First name:<br>
+     <input type="text" name="fname" size="35" required/><br>
+    Last name: <br><input type="text" name="lname" size="35" required/><br>
+    E-mail: <br><input type="text" name="email" size="35" required/><br>
+    Address: <br><input type="text" name="address" size="35"required/><br>
+    City: <br><input type="text" name="city" size="35" required/><br>
+    State: <br><input type="text" name="state" size="35" required/><br>
+    Zip code: <br><input type="text" name="zip" size="35" required/><br>
+    Brief profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
+
+    <input type="submit" name="Submit" />
 </form>
-	
-	
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+<script>
+
+jQuery.validator.setDefaults({
+});
+$( "#signupForm" ).validate({
+  rules: {
+    field: {
+      required: true
+    }
+  }
+});
+</script>
+
 </body>
 </html>

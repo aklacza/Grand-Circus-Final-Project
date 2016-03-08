@@ -47,7 +47,7 @@ public class ControllerClass1 {
 			
 			Connection c;
 			String connectionString = "jdbc:mysql://52.32.231.4:3306/boatsharedb";
-			c = DriverManager.getConnection(connectionString, "USERNAME", "PASSWORD!");
+			c = DriverManager.getConnection(connectionString, "boatadmin", "aBBazaBBa!");
 			Statement s = c.createStatement();
 			ResultSet results = s.executeQuery("select * from test");
 			ArrayList<String> customerID = new ArrayList<String>();
