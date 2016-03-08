@@ -4,13 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>List of captains</title>
+<title>Boat Buddy Help</title>
 </head>
 <body>
 
-Captain list:
-
-${cList}
+Boat Buddy Help
 
 </body>
 </html>
