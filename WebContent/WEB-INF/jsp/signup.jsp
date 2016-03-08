@@ -8,19 +8,19 @@
 </head>
 <body>
 
-Sign up for Boat Buddy:
+Sign up for Boat Buddy as a Shipmate:
 
 <br>
-<form action="success.html" method="GET">
+<form action="" method="GET">
 	First name:<br>
-	 <input type="text" name="fname" /><br>
-	Last name: <br><input type="text" name="lname" /><br>
-	E-mail: <br><input type="text" name="email" /><br>
-	Address: <br><input type="text" name="address" /><br>
-	City: <br><input type="text" name="city" /><br>
-	State: <br><input type="text" name="state" /><br>
-	Zip code: <br><input type="text" name="zip" /><br>
-	Brief profile:<br><input type="text" name="profile" /><br>
+	 <input type="text" name="fname" size="35"/><br>
+	Last name: <br><input type="text" name="lname" size="35"/><br>
+	E-mail: <br><input type="text" name="email" size="35"/><br>
+	Address: <br><input type="text" name="address" size="35"/><br>
+	City: <br><input type="text" name="city" size="35"/><br>
+	State: <br><input type="text" name="state" size="35"/><br>
+	Zip code: <br><input type="text" name="zip" size="35"/><br>
+	Brief profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
 	
 	<input type="submit" name="Submit" />
 	

@@ -8,7 +8,31 @@
 </head>
 <body>
 
-Boat Buddy Host
+Become a Boat Buddy Host:
+<br>
+<form action="" method="GET">
+	First name:<br>
+	 <input type="text" name="fname" size="35"/><br>
+	Last name: <br><input type="text" name="lname" size="35"/><br>
+	E-mail: <br><input type="text" name="email" size="35"/><br>
+
+	Tell us about your boat:
+	Address: <br><input type="text" name="address" size="35"/><br>
+	City: <br><input type="text" name="city" size="35"/><br>
+	State: <br><input type="text" name="state" size="35"/><br>
+	Zip code: <br><input type="text" name="zip" size="35"/><br>
+	
+	People capacity: <br><input type="text" name="zip" size="35"/><br>
+	Type of boat: <input type="radio" name="gender" value="motor" checked> Motor boat
+  <input type="radio" name="gender" value="sail"> Sail boat<br>
+	<br><input type="text" name="zip" size="35"/><br>
+	
+	
+	Brief profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
+	
+	<input type="submit" name="Submit" />
+	
+</form>
 
 </body>
 </html>

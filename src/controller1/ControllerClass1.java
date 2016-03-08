@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-
 public class ControllerClass1 {
 
 	@RequestMapping("/welcome")
@@ -32,5 +31,12 @@ public class ControllerClass1 {
 	public ModelAndView helpView() {
 		return new ModelAndView("help", "", "");
 	}
-
+	
+	@RequestMapping("/listCaptains")
+	public ModelAndView listCaptains() {
+		return new ModelAndView("listCaptains", "", "");
+	}
+	
+	
+	
 }

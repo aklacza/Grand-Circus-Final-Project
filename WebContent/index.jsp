@@ -26,6 +26,8 @@
           <li><a href="signup.html">Sign Up</a></li>
           <li><a href="login.html">Log In</a></li>
           <li><a href="help.html">Help</a></li>
+          <li><a href="listCaptains.html">List Captains</a></li>
+          
         </ul>
       </div>
     </div>
