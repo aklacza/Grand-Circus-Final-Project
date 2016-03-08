@@ -11,14 +11,43 @@
   border-radius: 7px ;
   -moz-border-radius: 6px;
   display: inline;
+  line-height: 1.5; 
+   margin: 5px 5px;
+     width: 400px;
 }
 
+.tbackground2{
+	text-shadow: 3px 3px 3px rgb(82, 125, 163);
+	
+}
+
+
+
 .tbackground1{
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,0.6);
   border-radius: 7px ;
   -moz-border-radius: 6px;
   display: inline;
-  padding: 10 10 10 10;
+  padding: 0.8rem;
+  text-shadow: 3px 3px 3px rgb(167, 190, 209);
+}
+
+.tbackground1 span{
+  display: inline;
+  padding: 0.8rem;
+  
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+}
+
+.padded-multiline span { 
+  background-color: #c0c;
+  color: #fff; 
+  display: inline;
+  padding: 0.45rem;
+  
+  /* Needs prefixing */
+  
 }
 
 .nav li {

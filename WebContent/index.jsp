@@ -34,9 +34,9 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h1 class="tbackground">Find a Boat near you!</h1> <br>
-        <p class="tbackground">Rent a Boat from local hosts in all of Michigan's most popular marinas!</p><br>
-        <a href="learnmore.jsp" class="tbackground1"> Learn more </a>
+        <h1  class="tbackground2">Find a Boat near you! </h1> 
+        <p class="tbackground2">Rent a Boat from local hosts in all of Michigan's most popular marinas!</p>
+        <a href="learnmore.jsp" class="tbackground1"><span>Learn more </span> </a>
       </div>
     </div> 
 
