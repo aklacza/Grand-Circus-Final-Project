@@ -28,11 +28,18 @@
     
      <div class="jumbotron">
      <div class="container">
+<<<<<<< HEAD
 
 		<h1>Become a Boat Buddy Host!</h1>
 		<br>
 		<h2>First, tell us a little about yourself:</h2><br>
+=======
+		<h1>Become a Boat Buddy Host:</h1>
+		<br>
+
+>>>>>>> 202bfb62c24c2ee4d599d7cc4ee5d3a4dca320c5
 		<form action="/BoatApp/hostSubmit" method="GET">
+
 			First name:<br>
 			 <input type="text" name="fname" size="35"/><br>
 			Last name: <br><input type="text" name="lname" size="35"/><br>
@@ -45,8 +52,14 @@
 			Boat State: <br><input type="text" name="state" size="35"/><br>
 			Boat Zip Code: <br><input type="text" name="zip" size="35"/><br>
 			
+<<<<<<< HEAD
 			Guest Capacity: <br><input type="text" name="capacity" size="35"/><br><br>
 			Type of Boat: <input type="radio" name="type" value="motor" checked> Motor boat
+=======
+
+			People capacity: <br><input type="text" name="capacity" size="35"/><br>
+			Type of boat: <input type="radio" name="type" value="motor" checked> Motor boat
+>>>>>>> 202bfb62c24c2ee4d599d7cc4ee5d3a4dca320c5
 		  <input type="radio" name="gender" value="sail"> Sail boat<br>
 			<br>
 			
@@ -63,7 +76,7 @@
 		
 		jQuery.validator.setDefaults({
 		});
-		$( "#signupForm" ).validate({
+		$( "#hostSignup" ).validate({
 		  rules: {
 		    field: {
 		      required: true

@@ -54,9 +54,11 @@ public class ControllerClass1 {
 
 	@RequestMapping("/listCaptains")
 	public ModelAndView listCaptains() {
-		
+
+
 		
 			return new ModelAndView("error", "error", "error");
+
 		}
 	}
 
