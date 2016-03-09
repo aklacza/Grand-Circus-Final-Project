@@ -7,8 +7,13 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import model.hostModel;
 
 @Controller
 public class ControllerClass1 {
@@ -22,6 +27,15 @@ public class ControllerClass1 {
 	public ModelAndView hostView() {
 		return new ModelAndView("host", "", "");
 	}
+	
+	//@RequestMapping("/hostSubmit")
+	@RequestMapping(value = "/hostSubmit", method = RequestMethod.GET) 
+	public ModelAndView hostViewSubmit(@ModelAttribute hostModel hmodel, Model model) {
+		
+		
+		return new ModelAndView("success", "message", hmodel.toString());
+	}
+	
 
 	@RequestMapping("/signup")
 	public ModelAndView signupView() {
@@ -41,27 +55,8 @@ public class ControllerClass1 {
 	@RequestMapping("/listCaptains")
 	public ModelAndView listCaptains() {
 		
-		try {
-			
-			Class.forName("com.mysql.jdbc.Driver");
-			
-			Connection c;
-			String connectionString = "jdbc:mysql://52.32.231.4:3306/boatsharedb";
-			c = DriverManager.getConnection(connectionString, "boatadmin", "aBBazaBBa!");
-			Statement s = c.createStatement();
-			ResultSet results = s.executeQuery("select * from test");
-			ArrayList<String> customerID = new ArrayList<String>();
-
-			while (results.next()) {
-				customerID.add(results.getString(1));
-			}
-			return new ModelAndView("listCaptains", "cList", customerID);
-
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-
-			return new ModelAndView("error", "error", e.getMessage());
+		
+			return new ModelAndView("error", "error", "error");
 		}
 	}
-}
+
