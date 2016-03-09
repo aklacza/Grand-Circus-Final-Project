@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
+Built-By: SYSOP
+Build-Jdk: 1.8.0_73
+=======
 Built-By: computeruser
 Build-Jdk: 1.8.0_65
+>>>>>>> 202bfb62c24c2ee4d599d7cc4ee5d3a4dca320c5
 Created-By: Maven Integration for Eclipse
 

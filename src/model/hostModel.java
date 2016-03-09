@@ -32,6 +32,7 @@ public class hostModel {
 	}
 
 	public String toString() {
+<<<<<<< HEAD
 		return "id: " + id + 
 				"First name: " + fname + 
 				"\n last name=" + lname + 
@@ -42,6 +43,17 @@ public class hostModel {
 				", zip = " + zip + 
 				", capacity = " + capacity + 
 				", type = " + type;
+=======
+		return "<br> First name: " + fname + 
+				"<br> last name=" + lname + 
+				"<br> email = " + email + 
+				"<br> address = " + address + 
+				"<br> city = " + city + 
+				"<br> state = " + state + 
+				"<br> zip = " + zip + 
+				"<br> capacity = " + capacity + 
+				"<br> type = " + type;
+>>>>>>> 2c12167828d9f08c928dfcb554c09ea3d60571d1
 	}
 
 	public int getId() {

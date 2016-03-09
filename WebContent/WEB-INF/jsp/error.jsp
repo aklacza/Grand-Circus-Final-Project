@@ -8,7 +8,8 @@
 </head>
 <body>
 
-Boat Buddy Help
+Boat Buddy Error
+${error}
 
 </body>
 </html>
