@@ -29,28 +29,31 @@
      <div class="jumbotron">
      <div class="container">
 
-		<h1>Become a Boat Buddy Host:</h1>
+		<h1>Become a Boat Buddy Host!</h1>
 		<br>
+		<h2>First, tell us a little about yourself:</h2><br>
 		<form action="/BoatApp/hostSubmit" method="GET">
 			First name:<br>
 			 <input type="text" name="fname" size="35"/><br>
 			Last name: <br><input type="text" name="lname" size="35"/><br>
 			E-mail: <br><input type="text" name="email" size="35"/><br>
-		
-			Tell us about your boat!<br>
-			Address: <br><input type="text" name="address" size="35"/><br>
-			City: <br><input type="text" name="city" size="35"/><br>
-			State: <br><input type="text" name="state" size="35"/><br>
-			Zip code: <br><input type="text" name="zip" size="35"/><br>
+		    <br>
+			<h2>Now, tell us about your boat!</h2>
+			<br>
+			Boat Address: <br><input type="text" name="address" size="35"/><br>
+			Boat City: <br><input type="text" name="city" size="35"/><br>
+			Boat State: <br><input type="text" name="state" size="35"/><br>
+			Boat Zip Code: <br><input type="text" name="zip" size="35"/><br>
 			
-			People capacity: <br><input type="text" name="capacity" size="35"/><br>
-			Type of boat: <input type="radio" name="type" value="motor" checked> Motor boat
+			Guest Capacity: <br><input type="text" name="capacity" size="35"/><br><br>
+			Type of Boat: <input type="radio" name="type" value="motor" checked> Motor boat
 		  <input type="radio" name="gender" value="sail"> Sail boat<br>
-			<br><input type="text" name="zip" size="35"/><br>
+			<br>
 			
 			
-			Brief profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
+			Brief Profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
 			
+		
 			<input type="submit" name="Submit" />
 		</form>
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
