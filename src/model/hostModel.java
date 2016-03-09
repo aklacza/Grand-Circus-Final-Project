@@ -30,15 +30,15 @@ public class hostModel {
 	}
 
 	public String toString() {
-		return "First name: " + fname + 
-				"\n last name=" + lname + 
-				", email = " + email + 
-				", address = " + address + 
-				", city = " + city + 
-				", state = " + state + 
-				", zip = " + zip + 
-				", capacity = " + capacity + 
-				", type = " + type;
+		return "<br> First name: " + fname + 
+				"<br> last name=" + lname + 
+				"<br> email = " + email + 
+				"<br> address = " + address + 
+				"<br> city = " + city + 
+				"<br> state = " + state + 
+				"<br> zip = " + zip + 
+				"<br> capacity = " + capacity + 
+				"<br> type = " + type;
 	}
 
 	public String getLname() {

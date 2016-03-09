@@ -18,28 +18,11 @@ public class UserDAO {
 		//get parameters
 	}
 	
+	public void viewHostData(){
+		
+	}
+	
 
-//	try {
-//		
-//		Class.forName("com.mysql.jdbc.Driver");
-//		
-//		Connection c;
-//		String connectionString = "jdbc:mysql://52.32.231.4:3306/boatsharedb";
-//		c = DriverManager.getConnection(connectionString, "boatadmin", "aBBazaBBa!");
-//		Statement s = c.createStatement();
-//		ResultSet results = s.executeQuery("select * from test");
-//		ArrayList<String> customerID = new ArrayList<String>();
-//
-//		while (results.next()) {
-//			customerID.add(results.getString(1));
-//		}
-//		return new ModelAndView("listCaptains", "cList", customerID);
-//
-//	} catch (Exception e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//
-//		return new ModelAndView("error", "error", e.getMessage());
-//	}
+	
 }
 
