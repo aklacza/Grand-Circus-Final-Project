@@ -1,3 +1,4 @@
+@CHARSET "UTF-8";
 .nav a {
   color: #5a5a5a;
   font-size: 13px;
@@ -21,10 +22,8 @@
 	
 }
 
-
-
 .tbackground1{
-	background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.6);
   border-radius: 7px ;
   -moz-border-radius: 6px;
   display: inline;
@@ -107,4 +106,29 @@
 
 .learn-more a {
   color: #00b0ff;
+}
+
+form {
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: rgba(255,255,255,0.8);
+  margin: auto;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
