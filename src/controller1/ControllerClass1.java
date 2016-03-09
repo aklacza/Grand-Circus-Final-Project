@@ -27,13 +27,15 @@ public class ControllerClass1 {
 	public ModelAndView hostView() {
 		return new ModelAndView("host", "", "");
 	}
-
-	// @RequestMapping("/hostSubmit")
-	@RequestMapping(value = "/hostSubmit", method = RequestMethod.GET)
+	
+	//@RequestMapping("/hostSubmit")
+	@RequestMapping(value = "/hostSubmit", method = RequestMethod.GET) 
 	public ModelAndView hostViewSubmit(@ModelAttribute hostModel hmodel, Model model) {
-
+		
+		
 		return new ModelAndView("success", "message", hmodel.toString());
 	}
+	
 
 	@RequestMapping("/signup")
 	public ModelAndView signupView() {
@@ -53,33 +55,10 @@ public class ControllerClass1 {
 	@RequestMapping("/listCaptains")
 	public ModelAndView listCaptains() {
 
-		try {
 
-			Class.forName("com.mysql.jdbc.Driver");
+		
+			return new ModelAndView("error", "error", "error");
 
-			Connection c;
-			String connectionString = "jdbc:mysql://52.32.231.4:3306/boatsharedb";
-			c = DriverManager.getConnection(connectionString, "boatadmin", "aBBazaBBa!");
-			Statement s = c.createStatement();
-			ResultSet results = s.executeQuery("select * from boathosts");
-			ArrayList<ArrayList<String>> hosts = new ArrayList<ArrayList<String>>();
-			
-
-			while (results.next()) {
-				ArrayList<String> hostDetails = new ArrayList<String>();
-				for(int x = 1; x < 8; x++){
-					hostDetails.add(results.getString(x));
-				}
-				hosts.add(hostDetails);				
-			}
-			return new ModelAndView("listCaptains", "cList", hosts);
-
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-
-			return new ModelAndView("error", "error", e.getMessage());
 		}
-
 	}
-}
+
