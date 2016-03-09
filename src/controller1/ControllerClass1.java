@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import UserDAOPackage.UserDAO;
 import model.hostModel;
 
 @Controller
@@ -31,7 +32,8 @@ public class ControllerClass1 {
 	//@RequestMapping("/hostSubmit")
 	@RequestMapping(value = "/hostSubmit", method = RequestMethod.GET) 
 	public ModelAndView hostViewSubmit(@ModelAttribute hostModel hmodel, Model model) {
-		
+		UserDAO dao = new UserDAO();
+//		dao.insertUserMethod
 		
 		return new ModelAndView("success", "message", hmodel.toString());
 	}

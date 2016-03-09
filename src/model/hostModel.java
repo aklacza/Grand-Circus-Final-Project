@@ -2,6 +2,7 @@ package model;
 
 public class hostModel {
 	
+	private int id;
 	private String fname;
 	private String lname;
 	private String email;
@@ -16,8 +17,9 @@ public class hostModel {
 	public hostModel() {
 	}
 
-	public hostModel(String fname, String lname, String email, String address, String city, String state, String zip,
+	public hostModel(int id, String fname, String lname, String email, String address, String city, String state, String zip,
 			String capacity, String type) {
+		this.id = id;
 		this.fname = fname;
 		this.lname = lname;
 		this.email = email;
@@ -30,7 +32,8 @@ public class hostModel {
 	}
 
 	public String toString() {
-		return "First name: " + fname + 
+		return "id: " + id + 
+				"First name: " + fname + 
 				"\n last name=" + lname + 
 				", email = " + email + 
 				", address = " + address + 
@@ -39,6 +42,14 @@ public class hostModel {
 				", zip = " + zip + 
 				", capacity = " + capacity + 
 				", type = " + type;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getLname() {
