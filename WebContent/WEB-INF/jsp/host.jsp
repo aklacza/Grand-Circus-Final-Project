@@ -30,7 +30,9 @@
      <div class="container">
 		<h1>Become a Boat Buddy Host:</h1>
 		<br>
-		<form action="hostSignup" method="GET">
+
+		<form action="/BoatApp/hostSubmit" method="GET">
+
 			First name:<br>
 			 <input type="text" name="fname" size="35"/><br>
 			Last name: <br><input type="text" name="lname" size="35"/><br>
@@ -42,9 +44,12 @@
 			State: <br><input type="text" name="state" size="35"/><br>
 			Zip code: <br><input type="text" name="zip" size="35"/><br>
 			
-			People capacity: <br><input type="text" name="zip" size="35"/><br>
-			Type of boat: <input type="radio" name="boatType" value="motor" checked> Motor boat
-		    <input type="radio" name="boatType" value="sail"> Sail boat<br>
+
+			People capacity: <br><input type="text" name="capacity" size="35"/><br>
+			Type of boat: <input type="radio" name="type" value="motor" checked> Motor boat
+		  <input type="radio" name="gender" value="sail"> Sail boat<br>
+			<br><input type="text" name="zip" size="35"/><br>
+			
 			
 			Brief profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
 			
@@ -68,5 +73,7 @@
 		
 		</script>
 	</div>
+	</div>
+	
 </body>
 </html>
