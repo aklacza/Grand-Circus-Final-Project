@@ -57,7 +57,7 @@ public class ControllerClass1 {
 			}
 			return new ModelAndView("listCaptains", "cList", customerID);
 
-		} catch (Exception e) {
+			} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 

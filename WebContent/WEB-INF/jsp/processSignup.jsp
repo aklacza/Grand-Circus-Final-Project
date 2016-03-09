@@ -27,7 +27,7 @@ Connection con = DriverManager.getConnection("jdbc:mysql://boatsharedb.caz3pvhlc
 
 Statement st=con.createStatement();
 
-int result=st.executeUpdate("INSERT INTO boathosts(fname, lname, emailAddress, address, city, state, zip, boatType, profile) VALUES('"+fname+"','"+lname+"','"+email+"','"+address+"','"+city+"','"+state+"','"+zip+"','"+boatType+"','"+profile+"')");
+//int result=st.executeUpdate("INSERT INTO boathosts(fname, lname, emailAddress, address, city, state, zip, boatType, profile) "VALUES("+fname+",'"+lname+"','"+email+"','"+address+"','"+city+"','"+state+"','"+zip+"','"+boatType+"','"+profile+"')");
 %>
 <h1>Success! You've been added to our database, please use your username and login for next time!</h1>
 
