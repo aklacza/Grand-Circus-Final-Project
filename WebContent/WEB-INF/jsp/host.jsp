@@ -32,7 +32,7 @@
 		<br>
 
 		<h2>First, tell us a little about yourself:</h2><br>
-		<form action="/BoatApp/hostSubmit" method="GET">
+		<form id="hostSignup" action="/BoatApp/hostSubmit" method="GET">
 
 			First name:<br>
 			 <input type="text" name="fname" size="35"/><br>
@@ -55,12 +55,10 @@
 		    	   <input type="radio" name="type" value="canoe"> Canoe<br>
 		    	   <input type="radio" name="type" value="kayak"> kayak<br>
 			<br>
-			
-			
 			Brief Profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
 			
 		
-			<input type="submit" name="Submit" />
+		<br><input type="submit" name="Submit" /><br>
 		</form>
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
