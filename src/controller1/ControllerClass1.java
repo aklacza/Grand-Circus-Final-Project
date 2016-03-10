@@ -55,18 +55,11 @@ public class ControllerClass1 {
 
 	@RequestMapping("/listCaptains")
 	public ModelAndView listCaptains() {
-<<<<<<< HEAD
-
-			return new ModelAndView("error", "error", "error");
-
-		}
-=======
 		return new ModelAndView("error", "error", "error");
->>>>>>> 3edbd66dc8d85626534323eee1925adb97c76f6b
 	}
-	
+
 	@RequestMapping("/learnMore")
 	public ModelAndView learnMore() {
-		return new ModelAndView("learnMore", "message", "");
+		return new ModelAndView("learnMore", "", "");
 	}
 }

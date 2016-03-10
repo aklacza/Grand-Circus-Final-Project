@@ -7,7 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title></title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<<<<<<< HEAD
 <link rel="stylesheet" href="css/main.css">
+=======
+
+<link rel="stylesheet" href="WebContent/css/main.css">
+>>>>>>> 0c31941034e95c3b78cee66511c12d7dd7281953
 
 </head>
 <body>
@@ -35,7 +40,7 @@
       <div class="container">
         <h1  class="tbackground2">Find a Boat near you! </h1> 
         <p class="tbackground2">Rent a Boat from local hosts in all of Michigan's most popular marinas!</p>
-        <a href="learnmore.html" class="tbackground1"><span>Learn more </span> </a>
+        <a href="boatBuddy.jsp" class="tbackground1"><span>Learn more </span> </a>
       </div>
     </div> 
 
