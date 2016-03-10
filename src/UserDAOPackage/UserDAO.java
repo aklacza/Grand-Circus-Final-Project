@@ -23,7 +23,6 @@ public class UserDAO {
 		//get parameters
 	}
 	
-<<<<<<< HEAD
 	public hostModel getHostById(int id) {
 		try {
 			String st = "select * from boathosts where id=?";
@@ -64,13 +63,11 @@ public class UserDAO {
 			}
 			return newModel;
 		}
-=======
-	public void viewHostData(){
+
+	public void viewHostData() {
 		
 	}
 	
 
-	
->>>>>>> 2c12167828d9f08c928dfcb554c09ea3d60571d1
 }
 
