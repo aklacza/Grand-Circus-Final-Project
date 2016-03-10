@@ -14,25 +14,37 @@ import model.hostModel;
 
 import java.util.List;
 import java.util.Scanner;
-
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 public class UserDAO {
 
-	public hostModel submitHostData(hostModel newHostData) { //FINISH THIS!!!
+	public void submitHostData(hostModel newHostData) { //FINISH THIS!!!
 		try {
-			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `address`, `city`, `state`, `zip`, `peoplecapicity`, `boattype`, `picture`, `profile`, `interests`) VALUES ('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?')";
+			System.out.println("submitHostData method started");
+			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `address`, "
+					+ "`city`, `state`, `zip`, `peoplecapicity`, `boattype`, "
+					+ "`picture`, `profile`, `interests`) "
+					+ "VALUES ('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?')";
 			Connection connection = getConnection();
 			PreparedStatement statement = connection.prepareStatement(st);
-			statement.setString(1, x);
-			ResultSet results = statement.executeUpdate();
-			return wrapResultSetToModel(results);
+			statement.setString(1, newHostData.getFname());
+			statement.setString(2, newHostData.getLname());
+			statement.setString(3, newHostData.getEmail());
+			statement.setString(4, newHostData.getAddress());
+			statement.setString(5, newHostData.getCity());
+			statement.setString(6, newHostData.getState());
+			statement.setString(7, newHostData.getZip());
+			statement.setInt(8, newHostData.getCapacity());
+			statement.setString(9, newHostData.getType());
+//The picture will go here			statement.setString(10, newHostData.get);
+			statement.setString(11, newHostData.getProfile());
+			statement.setString(12, newHostData.getInterests());  
+			System.out.println(statement.executeUpdate());
 		} catch (Exception e) {
-			return null;
+			e.printStackTrace();
 		}
-
 	}
 
 	public hostModel getHostById(int id) {

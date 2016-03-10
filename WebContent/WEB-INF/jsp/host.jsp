@@ -31,7 +31,7 @@
 		<br>
 
 		<h2>First, tell us a little about yourself:</h2><br>
-		<form id="hostSignup" action="/BoatApp/hostSubmit" method="GET">
+		<form id="hostSignup" action="/hostSubmit" method="GET">
 
 			First name:<br>
 			 <input type="text" name="fname" size="35"/><br>

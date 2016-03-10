@@ -32,8 +32,10 @@ public class ControllerClass1 {
 	// @RequestMapping("/hostSubmit")
 	@RequestMapping(value = "/hostSubmit", method = RequestMethod.GET)
 	public ModelAndView hostViewSubmit(@ModelAttribute hostModel hmodel, Model model) {
+		System.out.println("hostViewSubmit");
 		UserDAO dao = new UserDAO();
 		// dao.insertUserMethod
+		dao.submitHostData(hmodel);
 
 		return new ModelAndView("success", "message", hmodel.toString());
 	}
