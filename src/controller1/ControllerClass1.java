@@ -28,16 +28,15 @@ public class ControllerClass1 {
 	public ModelAndView hostView() {
 		return new ModelAndView("host", "", "");
 	}
-	
-	//@RequestMapping("/hostSubmit")
-	@RequestMapping(value = "/hostSubmit", method = RequestMethod.GET) 
+
+	// @RequestMapping("/hostSubmit")
+	@RequestMapping(value = "/hostSubmit", method = RequestMethod.GET)
 	public ModelAndView hostViewSubmit(@ModelAttribute hostModel hmodel, Model model) {
 		UserDAO dao = new UserDAO();
-//		dao.insertUserMethod
-		
+		// dao.insertUserMethod
+
 		return new ModelAndView("success", "message", hmodel.toString());
 	}
-	
 
 	@RequestMapping("/signup")
 	public ModelAndView signupView() {
@@ -56,9 +55,18 @@ public class ControllerClass1 {
 
 	@RequestMapping("/listCaptains")
 	public ModelAndView listCaptains() {
+<<<<<<< HEAD
 
 			return new ModelAndView("error", "error", "error");
 
 		}
+=======
+		return new ModelAndView("error", "error", "error");
+>>>>>>> 3edbd66dc8d85626534323eee1925adb97c76f6b
 	}
-
+	
+	@RequestMapping("/learnMore")
+	public ModelAndView learnMore() {
+		return new ModelAndView("learnMore", "message", "");
+	}
+}
