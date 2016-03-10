@@ -16,6 +16,10 @@ import model.hostModel;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
 public class UserDAO {
 
 	public void submitHostData() {
@@ -38,12 +42,16 @@ public class UserDAO {
 		private Connection getConnection() {
 			try {
 				
-				Class.forName("com.mysql.jdbc.Driver");
-				
-				Connection c;
-				String connectionString = "jdbc:mysql://52.32.231.4:3306/boatsharedb";
-				c = DriverManager.getConnection(connectionString, "boatadmin", "aBBazaBBa!");
-				return c;
+//				Class.forName("com.mysql.jdbc.Driver");
+//				Connection c;
+//				String connectionString = "jdbc:mysql://endpoint";
+//				c = DriverManager.getConnection(connectionString, "root", "password");
+//				return c;
+			
+				Context ctx = new InitialContext();
+	            DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/dbb");
+	            Connection c = ds.getConnection();
+	            return c;
 		
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
