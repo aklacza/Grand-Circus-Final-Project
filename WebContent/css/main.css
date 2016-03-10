@@ -34,8 +34,6 @@
 .tbackground1 span{
   display: inline;
   padding: 0.8rem;
-  
-  /* Needs prefixing */
   -webkit-box-decoration-break: clone;
 }
 
@@ -43,10 +41,7 @@
   background-color: #c0c;
   color: #fff; 
   display: inline;
-  padding: 0.45rem;
-  
-  /* Needs prefixing */
-  
+  padding: 0.45rem; 
 }
 
 .nav li {
@@ -54,7 +49,7 @@
 }
 
 .jumbotron {
-  background-image:url('https://rutakintome.files.wordpress.com/2013/08/marina-sky.jpg');
+  background-image:url('../images/marina-sky.jpg');
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;

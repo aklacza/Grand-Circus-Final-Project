@@ -7,18 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title></title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<<<<<<< HEAD
-<link rel="stylesheet" href="css/main.css">
-=======
 
-<link rel="stylesheet" href="WebContent/css/main.css">
->>>>>>> 0c31941034e95c3b78cee66511c12d7dd7281953
+<link rel="stylesheet" href="css/main.css">
+
 
 </head>
 <body>
 
-<!-- <h1>Welcome to Boat Buddy!</h1> -->
-<!-- <a href="welcome.html">Welcome page</a>  -->
 
 <div class="nav">
       <div class="container">
@@ -84,12 +79,12 @@
       <div class="col-md-4">
       <h3>Host</h3>
       <p>Renting out your unused boat could pay your bills or fund your next vacation.</p>
-      <p><a href="host.jsp">Learn more about becoming a Host!</a></p>
+      <p><a href="host.html">Learn more about becoming a Host!</a></p>
       </div>
       <div class="col-md-4">
       <h3>Trust and Safety</h3>
       <p>From Verified ID to our customer support team, we've got your back!</p>
-      <p><a href="help.jsp">Learn about trust at Boat Buddy</a></p>
+      <p><a href="help.html">Learn about trust at Boat Buddy</a></p>
       <a href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook of Michigan Boating Laws</a>
       </div>
      </div> 

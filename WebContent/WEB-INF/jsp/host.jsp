@@ -5,10 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Be a Boat Buddy Host</title>
+<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="css/main.css">
 </head>
 </head>
 <body>
@@ -28,16 +27,11 @@
     
      <div class="jumbotron">
      <div class="container">
-<<<<<<< HEAD
 
-		<h1>Become a Boat Buddy Host!</h1>
-		<br>
-		<h2>First, tell us a little about yourself:</h2><br>
-=======
 		<h1>Become a Boat Buddy Host:</h1>
 		<br>
 
->>>>>>> 202bfb62c24c2ee4d599d7cc4ee5d3a4dca320c5
+		<h2>First, tell us a little about yourself:</h2><br>
 		<form action="/BoatApp/hostSubmit" method="GET">
 
 			First name:<br>
@@ -52,15 +46,14 @@
 			Boat State: <br><input type="text" name="state" size="35"/><br>
 			Boat Zip Code: <br><input type="text" name="zip" size="35"/><br>
 			
-<<<<<<< HEAD
-			Guest Capacity: <br><input type="text" name="capacity" size="35"/><br><br>
-			Type of Boat: <input type="radio" name="type" value="motor" checked> Motor boat
-=======
-
-			People capacity: <br><input type="text" name="capacity" size="35"/><br>
-			Type of boat: <input type="radio" name="type" value="motor" checked> Motor boat
->>>>>>> 202bfb62c24c2ee4d599d7cc4ee5d3a4dca320c5
-		  <input type="radio" name="gender" value="sail"> Sail boat<br>
+			Guest Capacity: <br><input type="text" name="capacity" size="35"/></br>
+			Type of boat:<br>
+					<input type="radio" name="type" value="motor" checked> Motor boat<br>
+				   <input type="radio" name="type" value="sail"> Sail boat<br>
+		    Other: <br>
+		    	   <input type="radio" name="type" value="jetski"> Jet Ski<br>
+		    	   <input type="radio" name="type" value="canoe"> Canoe<br>
+		    	   <input type="radio" name="type" value="kayak"> kayak<br>
 			<br>
 			
 			
