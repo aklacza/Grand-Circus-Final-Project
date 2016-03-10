@@ -10,7 +10,6 @@ import java.util.ArrayList;
 
 import org.springframework.web.servlet.ModelAndView;
 
-
 import model.hostModel;
 
 import java.util.List;
@@ -22,11 +21,20 @@ import javax.sql.DataSource;
 
 public class UserDAO {
 
-	public void submitHostData() {
-		// TODO Auto-generated method stub
-		//get parameters
+	public hostModel submitHostData(hostModel newHostData) { //FINISH THIS!!!
+		try {
+			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `address`, `city`, `state`, `zip`, `peoplecapicity`, `boattype`, `picture`, `profile`, `interests`) VALUES ('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?')";
+			Connection connection = getConnection();
+			PreparedStatement statement = connection.prepareStatement(st);
+			statement.setString(1, x);
+			ResultSet results = statement.executeUpdate();
+			return wrapResultSetToModel(results);
+		} catch (Exception e) {
+			return null;
+		}
+
 	}
-	
+
 	public hostModel getHostById(int id) {
 		try {
 			String st = "select * from boathosts where id=?";
@@ -39,43 +47,43 @@ public class UserDAO {
 			return null;
 		}
 	}
-		private Connection getConnection() {
-			try {
-				
-//				Class.forName("com.mysql.jdbc.Driver");
-//				Connection c;
-//				String connectionString = "jdbc:mysql://endpoint";
-//				c = DriverManager.getConnection(connectionString, "root", "password");
-//				return c;
-			
-				Context ctx = new InitialContext();
-	            DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/dbb");
-	            Connection c = ds.getConnection();
-	            return c;
-		
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-		
-				return null;
-			}
+
+	private Connection getConnection() {
+		try {
+
+			// Class.forName("com.mysql.jdbc.Driver");
+			// Connection c;
+			// String connectionString = "jdbc:mysql://endpoint";
+			// c = DriverManager.getConnection(connectionString, "root",
+			// "password");
+			// return c;
+
+			Context ctx = new InitialContext();
+			DataSource ds = (DataSource) ctx.lookup("java:comp/env/jdbc/dbb");
+			Connection c = ds.getConnection();
+			return c;
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+
+			return null;
 		}
-		
-		private hostModel wrapResultSetToModel(ResultSet result) throws SQLException {
-			hostModel newModel = new hostModel();
-			if (result.wasNull()) {
-				return newModel;
-			}
-			while (result.next()) {
-				newModel.setId(result.getInt("id"));
-			}
+	}
+
+	private hostModel wrapResultSetToModel(ResultSet result) throws SQLException {
+		hostModel newModel = new hostModel();
+		if (result.wasNull()) {
 			return newModel;
 		}
+		while (result.next()) {
+			newModel.setId(result.getInt("id"));
+		}
+		return newModel;
+	}
 
 	public void viewHostData() {
-		
+
 	}
-	
 
 }
-
