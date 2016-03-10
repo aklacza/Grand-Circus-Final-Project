@@ -1,3 +1,7 @@
 /build/
 /target/
+<<<<<<< HEAD
 /WebContent/META-INF/context.xml
+=======
+/WebContent/META-INF/context.xml
+>>>>>>> 69f7113b6f5f1ecf3a3b0eae68f2f25897c252f3
