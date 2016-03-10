@@ -15,12 +15,11 @@
       <div class="container">
         <ul class= "pull-left">
           <li><a href="index.jsp">Home</a></li>
-          <li><a href="host.jsp">Host</a></li>
+          <li><a href="host.html">Host</a></li>
         </ul>
         <ul class="pull-right">
-          <li><a href="signup.jsp">Sign Up</a></li>
-          <li><a href="login.jsp">Log In</a></li>
-          <li><a href="help.jsp">Help</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="help.html">Help</a></li>
         </ul>
       </div>
     </div>

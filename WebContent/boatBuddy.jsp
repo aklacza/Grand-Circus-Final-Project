@@ -19,7 +19,7 @@
           <li><a href="host.jsp">Host</a></li>
         </ul>
         <ul class="pull-right">
-          <li><a href="signup.jsp">Sign Up</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
           <li><a href="login.jsp">Log In</a></li>
           <li><a href="help.jsp">Help</a></li>
         </ul>
