@@ -10,9 +10,27 @@ public class hostModel {
 	private String city;
 	private String state;
 	private String zip;
-	private String capacity;
+	private int capacity;
 	private String type;
+	private String profile;
+	private String interests;
+	//private String picture;
 	
+	public String getProfile() {
+		return profile;
+	}
+
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
+
+	public String getInterests() {
+		return interests;
+	}
+
+	public void setInterests(String interests) {
+		this.interests = interests;
+	}
 	
 	public hostModel() {
 	}
@@ -101,7 +119,7 @@ public class hostModel {
 		this.zip = zip;
 	}
 
-	public String getCapacity() {
+	public int getCapacity() {
 		return capacity;
 	}
 
