@@ -30,7 +30,7 @@
 			<p class="tbackground2">Rent a Boat from local hosts in all of
 				Michigan's most popular marinas!</p>
 
-			<form id="hostSignup" action="/hostSubmit" method="GET">
+			<form id="hostSignup" action="${pageContext.request.contextPath}/hostSubmit" method="POST">
 			First name:<br>
 			 <input type="text" name="fname" size="35"/><br>
 			Last name: <br><input type="text" name="lname" size="35"/><br>

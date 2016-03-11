@@ -36,7 +36,7 @@ public class hostModel {
 	}
 
 	public hostModel(int id, String fname, String lname, String email, String address, String city, String state, String zip,
-			String capacity, String type) {
+			int capacity, String type) {
 		this.id = id;
 		this.fname = fname;
 		this.lname = lname;
@@ -123,7 +123,7 @@ public class hostModel {
 		return capacity;
 	}
 
-	public void setCapacity(String capacity) {
+	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
 
