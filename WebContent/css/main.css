@@ -49,7 +49,7 @@
 }
 
 .jumbotron {
-  background-image:url('../img/marina-sky.jpg');
+  background-image:url('../img/IMG_1511.jpg');
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,7 +136,7 @@ form#hostSignup{
   margin: auto;
   position: relative;
   width: 300px;
-  height: 500px;
+  height: 950px;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 14px;
   font-style: italic;

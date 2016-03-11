@@ -8,8 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BOAT BUDDY! Ball out of control . . . FOR FREE!</title>
-<link rel="stylesheet"
-	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="/BoatApp/css/main.css">
 
@@ -50,31 +49,31 @@
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img
-							src="http://www.madaboutboating.com/publishImages/index~~element82.JPG">
+							src="img/canoe.jpg">
 					</div>
 					<div class="thumbnail">
 						<img
-							src="http://www.bayharbor.com/bi/af19cf75-b210-4892-a4aa-232c76cc1c1f.jpg">
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img
-							src="http://cdn-7.psndealer.com/e2/dealersite/images/onekamamarine/5800SY_Garage_01.jpg">
-					</div>
-					<div class="thumbnail">
-						<img
-							src="https://s-media-cache-ak0.pinimg.com/736x/da/8c/ce/da8cced2ed3c7179c1d6e4b3f6e993fd.jpg">
+							src="img/jet.jpg">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img
-							src="http://www.charterworld.com/news/wp-content/uploads/2010/04/Lurssen-Motor-yacht-OASIS.jpg">
+							src="img/kayak.jpg">
 					</div>
 					<div class="thumbnail">
 						<img
-							src="http://media.channelblade.com/boat_graphics/electronic_brochure/company63395/324026_p_t_640x480_image12.jpg">
+							src="img/pontoon.jpg">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img
+							src="img/motoryachtcruising.jpg">
+					</div>
+					<div class="thumbnail">
+						<img
+							src="img/motor-yacht-onaction.jpg">
 					</div>
 				</div>
 			</div>
@@ -100,8 +99,7 @@
 					<p>
 						<a href="help.html">Learn about trust at Boat Buddy</a>
 					</p>
-					<a
-						href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook
+					<a href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook
 						of Michigan Boating Laws</a>
 				</div>
 			</div>

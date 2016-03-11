@@ -4,11 +4,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Boat Buddy Help</title>
+<title>BOAT BUDDY HELP!!!</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="/BoatApp/css/main.css">
 </head>
 <body>
+	<div class="nav">
+		<div class="container">
+			<ul class="pull-left">
+				<li><a href="index.jsp">Back to Boat Buddy</a></li>
+			</ul>
+		</div>
+	</div>
 
-Boat Buddy Help
-
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="tbackground2">Boat Buddy Help!</h1>
+			<p class="tbackground2">Please contact us!</p>
+		</div>
+	</div>
 </body>
 </html>

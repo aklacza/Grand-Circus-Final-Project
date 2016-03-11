@@ -26,19 +26,17 @@
     
      <div class="jumbotron">
      <div class="container">
+		<h1 class="tbackground2">Become a Buddy Host!</h1>
+			<p class="tbackground2">Rent a Boat from local hosts in all of
+				Michigan's most popular marinas!</p>
 
-		<h1>Become a Boat Buddy Host:</h1>
-		<br>
-
-		<h2>First, tell us a little about yourself:</h2><br>
-		<form id="hostSignup" action="/hostSubmit" method="GET">
-
+			<form id="hostSignup" action="/hostSubmit" method="GET">
 			First name:<br>
 			 <input type="text" name="fname" size="35"/><br>
 			Last name: <br><input type="text" name="lname" size="35"/><br>
 			E-mail: <br><input type="text" name="email" size="35"/><br>
 		    <br>
-			<h2>Now, tell us about your boat!</h2>
+			<h2>Tell us about your Boat!</h2>
 			<br>
 			Boat Address: <br><input type="text" name="address" size="35"/><br>
 			Boat City: <br><input type="text" name="city" size="35"/><br>
@@ -77,7 +75,7 @@
 		
 		</script>
 	</div>
-	</div>
+</div>
 	
 </body>
 </html>

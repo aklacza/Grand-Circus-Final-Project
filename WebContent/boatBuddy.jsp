@@ -16,12 +16,12 @@
       <div class="container">
         <ul class= "pull-left">
           <li><a href="index.jsp">Home</a></li>
-          <li><a href="host.jsp">Host</a></li>
+          <li><a href="host.html">Host</a></li>
         </ul>
         <ul class="pull-right">
           <li><a href="signup.html">Sign Up</a></li>
-          <li><a href="login.jsp">Log In</a></li>
-          <li><a href="help.jsp">Help</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="help.html">Help</a></li>
         </ul>
       </div>
     </div>
@@ -34,32 +34,49 @@
         Any user can access our web page on any computer, mobile phone or tablet. Whether a boat afternoon, a fishing trip, a weekend trip to
         Canada, or visit the Atlantic for a month, Boat Buddy connects people to unique water experiences, at any price point! 
         Boat Buddy will become the friendliest way for people to monetize their unused boat and showcase it to everyone in the world!</p>
-      </div>
+      </div></br>
       
-      <div class="founders">
-        <div class="container">
-        <h2>Check out our Boat Buddy founders!</h2>
-            <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src="http://www.madaboutboating.com/publishImages/index~~element82.JPG">
-                </div>
-            </div>
-            <div class="col-md-4">
-             <div class="thumbnail">
-                    <img src="http://cdn-7.psndealer.com/e2/dealersite/images/onekamamarine/5800SY_Garage_01.jpg">
-             </div>
-            </div>
-            <div class="col-md-4">
-             <div class="thumbnail">
-                    <img src="http://www.charterworld.com/news/wp-content/uploads/2010/04/Lurssen-Motor-yacht-OASIS.jpg">
-             </div>
-            <div class="thumbnail">
-                    <img src="http://media.channelblade.com/boat_graphics/electronic_brochure/company63395/324026_p_t_640x480_image12.jpg">
-             </div>
-            </div>
-            </div>
-        </div>
-    </div> 
+      
+	<div class="boat-guides">
+		<div class="container">
+			<h2>Boat Buddy founders!</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img
+							src="img/akza.jpg">
+					</div>
+					<h3>Explore Lake Saint Claire with Andrew!</h3>
+					<div class="thumbnail">
+						<img
+							src="img/sailing-yacht-171900_640.jpg">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img
+							src="img/diana_r_miller222.jpg">
+					</div>
+					<h3>Relax in style with Diana!</h3>
+					<div class="thumbnail">
+						<img
+							src="img/DMyacht.jpg">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img
+							src="img/matt.jpg">
+					</div>
+					<h3>Chill after work with Matt!</h3>
+					<div class="thumbnail">
+						<img
+							src="img/pontoon-891830_640.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>  
+</div>
 </body>
 </html>
