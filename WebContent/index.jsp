@@ -10,7 +10,7 @@
 <title>BOAT BUDDY! Ball out of control . . . FOR FREE!</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="/BoatApp/css/main.css">
+<link href="${pageContext.request.contextPath}/css/main.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -49,7 +49,7 @@
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img
-							src="img/canoe.jpg">
+							src="img/superyacht.jpg">
 					</div>
 					<div class="thumbnail">
 						<img
@@ -63,7 +63,7 @@
 					</div>
 					<div class="thumbnail">
 						<img
-							src="img/pontoon.jpg">
+							src="img/sailhorizon.jpg">
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -74,6 +74,7 @@
 					<div class="thumbnail">
 						<img
 							src="img/motor-yacht-onaction.jpg">
+					</div>
 					</div>
 				</div>
 			</div>
