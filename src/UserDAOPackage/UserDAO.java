@@ -26,9 +26,10 @@ public class UserDAO {
 			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `address`, "
 					+ "`city`, `state`, `zip`, `peoplecapicity`, `boattype`, "
 					+ "`picture`, `profile`, `interests`) "
-					+ "VALUES ('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?')";
+					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 			Connection connection = getConnection();
 			PreparedStatement statement = connection.prepareStatement(st);
+			
 			statement.setString(1, newHostData.getFname());
 			statement.setString(2, newHostData.getLname());
 			statement.setString(3, newHostData.getEmail());
@@ -38,7 +39,8 @@ public class UserDAO {
 			statement.setString(7, newHostData.getZip());
 			statement.setInt(8, newHostData.getCapacity());
 			statement.setString(9, newHostData.getType());
-//The picture will go here			statement.setString(10, newHostData.get);
+//The picture will go here	
+			statement.setString(10, "");
 			statement.setString(11, newHostData.getProfile());
 			statement.setString(12, newHostData.getInterests());  
 			System.out.println(statement.executeUpdate());
