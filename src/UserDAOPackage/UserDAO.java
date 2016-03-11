@@ -48,6 +48,22 @@ public class UserDAO {
 			e.printStackTrace();
 		}
 	}
+	
+	public ResultSet viewHostData() { 
+		try {
+			System.out.println("viewHostData method started");
+			String st = "SELECT * FROM boatsharedb.boathosts;";
+			Connection connection = getConnection();
+			PreparedStatement statement = connection.prepareStatement(st);
+			ResultSet results = statement.executeQuery();
+			
+			return results;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 
 	public hostModel getHostById(int id) {
 		try {
@@ -94,10 +110,6 @@ public class UserDAO {
 			newModel.setId(result.getInt("id"));
 		}
 		return newModel;
-	}
-
-	public void viewHostData() {
-
 	}
 
 }
