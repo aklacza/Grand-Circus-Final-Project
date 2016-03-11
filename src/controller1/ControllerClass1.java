@@ -57,7 +57,9 @@ public class ControllerClass1 {
 
 	@RequestMapping("/listCaptains")
 	public ModelAndView listCaptains() {
-		return new ModelAndView("error", "error", "error");
+		UserDAO dao = new UserDAO();
+		ResultSet results = dao.viewHostData();
+		return new ModelAndView("listCaptains", "results", results);
 	}
 
 	@RequestMapping("/learnMore")
