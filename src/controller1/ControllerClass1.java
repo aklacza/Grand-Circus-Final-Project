@@ -3,6 +3,7 @@ package controller1;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
@@ -59,7 +60,38 @@ public class ControllerClass1 {
 	public ModelAndView listCaptains() {
 		UserDAO dao = new UserDAO();
 		ResultSet results = dao.viewHostData();
-		return new ModelAndView("listCaptains", "results", results);
+		
+		ArrayList<hostModel> hostList = new ArrayList<hostModel>();
+		
+		try {
+			while (results.next()) {
+				
+				hostModel temp = new hostModel();
+				temp.setId(results.getInt(1));
+				temp.setFname(results.getString(2));
+				temp.setLname(results.getString(3));
+				temp.setEmail(results.getString(4));
+				temp.setAddress(results.getString(5));
+				temp.setCity(results.getString(6));
+				temp.setState(results.getString(7));
+				temp.setZip(results.getString(8));
+				temp.setCapacity(results.getInt(9));
+				temp.setType(results.getString(10));
+				temp.setProfile(results.getString(11));
+				temp.setInterests(results.getString(12));
+				hostList.add(temp);
+//			    for (int i = 1; i <= columns; i++) {
+//			        message.append(results.getString(i) + " ");
+//			        
+//			        hostList.add(results.getString(i));
+//			    }
+//			    message.append("\n");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return new ModelAndView("listCaptains", "results", hostList);
 	}
 
 	@RequestMapping("/learnMore")

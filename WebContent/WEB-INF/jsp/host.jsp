@@ -32,18 +32,18 @@
 
 			<form id="hostSignup" action="${pageContext.request.contextPath}/hostSubmit" method="POST">
 			First name:<br>
-			 <input type="text" name="fname" size="35"/><br>
-			Last name: <br><input type="text" name="lname" size="35"/><br>
-			E-mail: <br><input type="text" name="email" size="35"/><br>
+			 <input type="text" name="fname" size="30"/><br>
+			Last name: <br><input type="text" name="lname" size="30"/><br>
+			E-mail: <br><input type="text" name="email" size="30"/><br>
 		    <br>
 			<h2>Tell us about your Boat!</h2>
 			<br>
-			Boat Address: <br><input type="text" name="address" size="35"/><br>
-			Boat City: <br><input type="text" name="city" size="35"/><br>
-			Boat State: <br><input type="text" name="state" size="35"/><br>
-			Boat Zip Code: <br><input type="text" name="zip" size="35"/><br>
+			Boat Address: <br><input type="text" name="address" size="30"/><br>
+			Boat City: <br><input type="text" name="city" size="30"/><br>
+			Boat State: <br><input type="text" name="state" size="30"/><br>
+			Boat Zip Code: <br><input type="text" name="zip" size="30"/><br>
 			
-			Guest Capacity: <br><input type="text" name="capacity" size="35"/></br>
+			Guest Capacity: <br><input type="text" name="capacity" size="30"/></br>
 			Type of boat:<br>
 					<input type="radio" name="type" value="motor" checked> Motor boat<br>
 				   <input type="radio" name="type" value="sail"> Sail boat<br>
@@ -52,7 +52,7 @@
 		    	   <input type="radio" name="type" value="canoe"> Canoe<br>
 		    	   <input type="radio" name="type" value="kayak"> kayak<br>
 			<br>
-			Brief Profile:<br><input type="text" name="profile" size="35" style="height: 5em"/><br>
+			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
 			
 		
 		<br><input type="submit" name="Submit" /><br>
