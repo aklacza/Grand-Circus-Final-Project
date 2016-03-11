@@ -7,40 +7,60 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>List of captains</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="/BoatApp/css/main.css">
 </head>
 <body>
+<div class="nav">
+		<div class="container">
+			<ul class="pull-left">
+				<li><a href="boatBuddy.jsp">Boat Buddy</a></li>
+				
+			</ul>
+			<ul class="pull-right">
+				<li><a href="host.html">Become a Host</a></li>
+				<li><a href="signup.html">Sign Up</a></li>
+				<li><a href="login.html">Log In</a></li>
+				<li><a href="help.html">Help</a></li>
+				<li><a href="listCaptains.html">List Hosts</a></li>
 
-Captain list:
+			</ul>
+		</div>
+	</div>
 
-<table border=1>
-<tr>
-<td> Name </td>
-<td> Email </td>
-<td> Address </td>
-<td> City </td>
-<td> State </td>
-<td> Zip </td>
-<td> Guest Capacity </td>
-<td> Type </td>
-<td> Profile </td>
-<td> Interests </td>
-</tr>
-<c:forEach var = "myvar" items="${results}">
-<tr>
-<td> ${myvar.getFname()} ${myvar.getLname()} </td>
-<td> ${myvar.getEmail()} </td>
-<td> ${myvar.getAddress()} </td>
-<td> ${myvar.getCity()} </td>
-<td> ${myvar.getState()} </td>
-<td> ${myvar.getZip()} </td>
-<td> ${myvar.getCapacity()} </td>
-<td> ${myvar.getType()} </td>
-<td> ${myvar.getProfile()} </td>
-<td> ${myvar.getInterests()} </td>
-</tr>
-</c:forEach>
-</table>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="tbackground2">Captain list:</h1>
+				<table border=1>
+				<tr>
+				<td> Name </td>
+				<td> Email </td>
+				<td> Address </td>
+				<td> City </td>
+				<td> State </td>
+				<td> Zip </td>
+				<td> Guest Capacity </td>
+				<td> Type </td>
+				<td> Profile </td>
+				<td> Interests </td>
+				</tr>
+				<c:forEach var = "myvar" items="${results}">
+				<tr>
+				<td> ${myvar.getFname()} ${myvar.getLname()} </td>
+				<td> ${myvar.getEmail()} </td>
+				<td> ${myvar.getAddress()} </td>
+				<td> ${myvar.getCity()} </td>
+				<td> ${myvar.getState()} </td>
+				<td> ${myvar.getZip()} </td>
+				<td> ${myvar.getCapacity()} </td>
+				<td> ${myvar.getType()} </td>
+				<td> ${myvar.getProfile()} </td>
+				<td> ${myvar.getInterests()} </td>
+				</tr>
+				</c:forEach>
+				</table>
 
-
+		</div>
+	</div>
 </body>
 </html>

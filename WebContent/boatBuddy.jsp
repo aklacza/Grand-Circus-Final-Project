@@ -39,14 +39,14 @@
       
 	<div class="boat-guides">
 		<div class="container">
-			<h2>Boat Buddy founders!</h2>
+			<h2>Boat Buddy founders & Hosts!</h2>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img
 							src="img/akza.jpg">
 					</div>
-					<h3>Explore Lake Saint Claire with Andrew!</h3>
+					<h3>Explore Lake Saint Clair with Andrew!</h3>
 					<div class="thumbnail">
 						<img
 							src="img/sailing-yacht-171900_640.jpg">
@@ -78,5 +78,6 @@
 		</div>
 	</div>  
 </div>
+<p> This is our final project for our <a href="http://www.grandcircus.co/"> Grand Circus </a> Java Bootcamp.  </p> 
 </body>
 </html>

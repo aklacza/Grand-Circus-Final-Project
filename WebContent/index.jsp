@@ -37,7 +37,7 @@
 			<h1 class="tbackground2">Find a Boat near you!</h1>
 			<p class="tbackground2">Rent a Boat from local hosts in all of
 				Michigan's most popular marinas!</p>
-			<a href="boatBuddy.jsp" class="tbackground1"><span>Learn
+			<a href="learnMore.html" class="tbackground1"><span>Learn
 					more </span> </a>
 		</div>
 	</div>
