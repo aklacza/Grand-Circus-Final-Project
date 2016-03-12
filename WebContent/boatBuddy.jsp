@@ -77,7 +77,7 @@
 			</div>
 		</div>
 	</div>  
+<br><h4>Thank you to the Grand Circus staff, our Teacher Kamel & TA Maurice. Wanna make awesome Java applications? Visit:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h4> 
 </div>
-<p> This is our final project for our <a href="http://www.grandcircus.co/"> Grand Circus </a> Java Bootcamp.  </p> 
 </body>
 </html>

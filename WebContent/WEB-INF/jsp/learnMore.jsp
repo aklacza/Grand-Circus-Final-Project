@@ -24,7 +24,7 @@
 
 			</ul>
 		</div>
-	</div>
+	
 
 	<div class="jumbotron">
 		<div class="container">
@@ -33,9 +33,8 @@
 			<p> Boat buddy was envisioned to solve this problem by connecting people who own boats with people who want to go boating</p>
 		</div>
 		<div class="boat-guides">
-		<div class="container">
+			<div class="container">
 			<h2>Become a Host!</h2>
-			<h3>You're the captain, let's socialize!</h3>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
@@ -43,16 +42,17 @@
 					</div>
 				</div>
 			<h2>Become a Shipmate!</h2>
-			<h3>Sign up and start your search for your next adventure!</h3>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
 						<img src="img/canoe.jpg">
 					</div>
 				</div>
-	</div>					
+			</div>					
+			</div>
+			</div> 
 		</div>
-	</div>  
+	</div>
 </div>
 </body>
 </html>

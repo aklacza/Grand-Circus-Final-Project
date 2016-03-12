@@ -5,13 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Be a Boat Buddy Host</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="/BoatApp/css/main.css">
 <link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 </head>
 <body>
-<div class="nav">
+	<div class="nav">
       <div class="container">
         <ul class= "pull-left">
           <li><a href="index.jsp">Home</a></li>
@@ -22,7 +22,7 @@
           <li><a href="help.html">Help</a></li>
         </ul>
       </div>
-    </div>
+
     
      <div class="jumbotron">
      <div class="container">
@@ -53,29 +53,27 @@
 		    	   <input type="radio" name="type" value="kayak"> kayak<br>
 			<br>
 			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
-			
-		
 		<br><input type="submit" name="Submit" /><br>
 		</form>
-		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-		<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
-		<script>
 		
-		jQuery.validator.setDefaults({
-		});
-		$( "#hostSignup" ).validate({
-		  rules: {
-		    field: {
-		      required: true
-		      
-		    }
-		  }
-		});
-		
-		</script>
+			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+			<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+			<script>
+			
+			jQuery.validator.setDefaults({
+			});
+			$( "#hostSignup" ).validate({
+			  rules: {
+			    field: {
+			      required: true
+			      
+			    }
+			  }
+			});
+			</script>
 	</div>
-</div>
-	
+ </div>
+</div>	
 </body>
 </html>

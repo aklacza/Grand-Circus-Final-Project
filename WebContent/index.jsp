@@ -35,10 +35,10 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="tbackground2">Find a Boat near you!</h1>
-			<p class="tbackground2">Rent a Boat from local hosts in all of
-				Michigan's most popular marinas!</p>
-			<a href="learnMore.html" class="tbackground1"><span>Learn
-					more </span> </a>
+			<p class="tbackground2">Boat Buddy connects people to unique water experiences, at any price point! 
+			Whether you are a "Host Buddy" or a "Boat Shipmate" enjoy endless sunsets,fishing trips, a weekend trip to
+            Michigan's most popular lakes!</p>
+			<a href="learnMore.html" class="tbackground1"><span>Learn more </span> </a>
 		</div>
 	</div>
 
