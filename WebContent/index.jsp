@@ -39,7 +39,16 @@
 			<p class="tbackground2">Boat Buddy connects people to unique water experiences, at any price point! 
 			Whether you are a "Host Buddy" or a "Boat Shipmate" enjoy endless sunsets,fishing trips, a weekend trip to
             Michigan's most popular lakes!</p>
-			<a href="learnMore.html" class="tbackground1"><span>Learn more </span> </a>
+			<a href="learnMore.html" class="tbackground1"><span>Learn more </span></a>
+			<br>
+			
+			<form>
+				<fieldset class="form-group">
+    			<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search by City">
+    			<input type="submit" class="tbackground1" value="Search" style="float: right">
+				</fieldset>	
+			</form>
+			</div>
 		</div>
 	</div>
 

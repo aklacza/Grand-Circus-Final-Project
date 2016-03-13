@@ -19,7 +19,6 @@
 
 .tbackground2{
 	text-shadow: 3px 3px 3px rgb(82, 125, 163);
-	
 }
 
 .tbackground1{
@@ -35,6 +34,13 @@
   display: inline;
   padding: 0.8rem;
   -webkit-box-decoration-break: clone;
+}
+
+.form-group{
+    width: 400px;
+    height: 35px;
+    padding: 20px;
+    margin: 50px auto 50px;
 }
 
 .padded-multiline span { 
