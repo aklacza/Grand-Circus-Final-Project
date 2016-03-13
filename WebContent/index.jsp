@@ -7,10 +7,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BOAT BUDDY! Ball out of control . . . FOR FREE!</title>
+<title>Boat Buddy</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="/BoatApp/css/main.css">
+<link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
@@ -37,11 +37,23 @@
 		<div class="container">
 			<h1 class="tbackground2">Find a Boat near you!</h1>
 			<p class="tbackground2">Boat Buddy connects people to unique water experiences, at any price point! 
-			Whether you are a "Host Buddy" or a "Boat Shipmate" enjoy endless sunsets,fishing trips, a weekend trip to
+			Whether you are a boat owner or are looking to hit the water, you can enjoy endless sunsets, fishing trips and weekend excursions on
             Michigan's most popular lakes!</p>
-			<a href="learnMore.html" class="tbackground1"><span>Learn more </span> </a>
+			<a href="learnMore.html" class="tbackground1"><span>Learn more </span></a>
+			<br>
+			
+			<form>
+				<fieldset class="form-group">
+				
+				<input type="submit" class="tbackground1" value="Search" style="float: right">
+				<div style="overflow: hidden; padding-right: .5em;">
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search by City">
+    			</div>
+				
+				</fieldset>	
+			</form>
+			</div>
 		</div>
-	</div>
 
 	<div class="boat-guides">
 		<div class="container">

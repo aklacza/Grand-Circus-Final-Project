@@ -21,15 +21,13 @@ import javax.sql.DataSource;
 public class UserDAO {
 
 	public void submitHostData(hostModel newHostData) { //FINISH THIS!!!
-		try {
+		try (Connection connection = getConnection()) {
 			System.out.println("submitHostData method started");
 			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `address`, "
 					+ "`city`, `state`, `zip`, `peoplecapicity`, `boattype`, "
 					+ "`picture`, `profile`, `interests`) "
 					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-			Connection connection = getConnection();
 			PreparedStatement statement = connection.prepareStatement(st);
-			
 			statement.setString(1, newHostData.getFname());
 			statement.setString(2, newHostData.getLname());
 			statement.setString(3, newHostData.getEmail());
@@ -44,19 +42,19 @@ public class UserDAO {
 			statement.setString(11, newHostData.getProfile());
 			statement.setString(12, newHostData.getInterests());  
 			System.out.println(statement.executeUpdate());
+			statement.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
 	public ResultSet viewHostData() { 
-		try {
+		try (Connection connection = getConnection()) {
 			System.out.println("viewHostData method started");
 			String st = "SELECT * FROM boatsharedb.boathosts;";
-			Connection connection = getConnection();
 			PreparedStatement statement = connection.prepareStatement(st);
 			ResultSet results = statement.executeQuery();
-			
+			statement.close();
 			return results;
 			
 		} catch (Exception e) {
@@ -66,12 +64,13 @@ public class UserDAO {
 	}
 
 	public hostModel getHostById(int id) {
-		try {
+		try (Connection connection = getConnection()) {
 			String st = "select * from boathosts where id=?";
 			Connection c = getConnection();
 			PreparedStatement s = c.prepareStatement(st);
 			s.setInt(1, id);
 			ResultSet results = s.executeQuery();
+			s.close();
 			return wrapResultSetToModel(results);
 		} catch (Exception e) {
 			return null;
