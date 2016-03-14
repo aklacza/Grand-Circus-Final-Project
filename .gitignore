@@ -1,4 +1,5 @@
 /build/
 /target/*
 /WebContent/META-INF/context.xml
+/WebContent/META-INF/MANIFEST.MF
 
