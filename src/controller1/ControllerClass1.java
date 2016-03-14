@@ -75,6 +75,12 @@ public class ControllerClass1 {
 		return new ModelAndView("listCaptains", "results", hosts);
 	}
 	
+	@RequestMapping(value="/listCaptainsBySort", method=RequestMethod.GET)
+	public ModelAndView listCaptainsBySort(@RequestParam("sort")String sort) {
+		UserDAO dao = new UserDAO();
+		ArrayList<hostModel> hosts = dao.viewHostDataBySort(sort);
+		return new ModelAndView("listCaptains", "results", hosts);
+	}
 
 	@RequestMapping("/learnMore")
 	public ModelAndView learnMore() {

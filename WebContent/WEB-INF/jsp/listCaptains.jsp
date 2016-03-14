@@ -31,19 +31,20 @@
 	<div class="jumbotron" >
 		<div class="container">
 			<h1 class="tbackground2">Captain list:</h1>
+			<h4> Click heading to sort.</h4>
 				<div >
 				<table border=1>
 				<tr>
 				<td> Name </td>
 				<td> Email </td>
 				<td> Address </td>
-				<td> City </td>
-				<td> State </td>
+				<td> <a href="listCaptainsBySort?sort=city">City </a></td>
+				<td> <a href="listCaptainsBySort?sort=state">State</a> </td>
 				<td> Zip </td>
-				<td> Guest Capacity </td>
-				<td> Type </td>
+				<td> <a href="listCaptainsBySort?sort=peoplecapicity">Guest Capacity </a></td>
+				<td> <a href="listCaptainsBySort?sort=boattype">Type </a></td>
 				<td> Profile </td>
-				<td> Interests </td>
+				<td> Reserve Now! </td>
 				</tr>
 				<c:forEach var = "myvar" items="${results}">
 				<tr>
@@ -55,7 +56,6 @@
 				<td> ${myvar.getZip()} </td>
 				<td> ${myvar.getCapacity()} </td>
 				<td> ${myvar.getType()} </td>
-				<td> ${myvar.getProfile()} </td>
 				<td> ${myvar.getInterests()} </td>
 				</tr>
 				</c:forEach>

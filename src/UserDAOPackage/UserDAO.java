@@ -84,6 +84,11 @@ public class UserDAO {
 		return searchDBByInputQuery(query);
 	}
 	
+	public ArrayList<hostModel> viewHostDataBySort(String sort) { 
+		String query = "SELECT * FROM boatsharedb.boathosts order by "+sort+";";
+		return searchDBByInputQuery(query);
+	}
+	
 	private ArrayList<hostModel> searchDBByInputQuery(String query) {
 		try (Connection connection = getConnection()) {
 			System.out.println("viewHostDataByCity method started");
