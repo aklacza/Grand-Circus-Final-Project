@@ -33,17 +33,19 @@
 			<p class="tbackground2"> Boat buddy was envisioned to solve this problem by connecting people who own boats (Boat Hosts) with people who want to go boating: Shipmates</p>
 		</div>
 		<div class="boat-guides">
-			<div class="container" style="clear: none; display=inline">
-			<h2 style="width=50%; display=inline"">Become a Host!</h2>
-			<div class="row">
+			<div class="container">
+			<div class="column" style="width:48%; height: 100%; display:inline-block">
+						<h2 >Become a Host!</h2>
+			
 				<div class="col-md-6">
 					<div class="thumbnail">
 						<img src="img/canoe.jpg">
 					</div>
 				</div>
-				
-			<h2 style="width=50%; display=inline">Become a Shipmate!</h2>
-			<div class="row">
+			</div>
+			
+			<div class="column" style="width:48%; height: 100%; display:inline-block">
+			<h2 >Become a Shipmate!</h2>
 				<div class="col-md-6">
 					<div class="thumbnail">
 						<img src="img/canoe.jpg">
@@ -51,7 +53,6 @@
 				</div>
 			</div>					
 			</div>
-			</div> 
 		</div>
 	</div>
 </div>

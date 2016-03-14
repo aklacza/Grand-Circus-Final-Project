@@ -34,8 +34,9 @@
 			<h4> Click heading to sort.</h4>
 				<div >
 				<table border=1>
+				<tbody style="opacity: 1; background-color: rgba(255, 255, 255, 0.4);">
 				<tr>
-				<td> Name </td>
+				<td style="padding: 2px 6px 2px 6px;"> Name </td>
 				<td> Email </td>
 				<td> Address </td>
 				<td> <a href="listCaptainsBySort?sort=city">City </a></td>
@@ -44,7 +45,7 @@
 				<td> <a href="listCaptainsBySort?sort=peoplecapicity">Guest Capacity </a></td>
 				<td> <a href="listCaptainsBySort?sort=boattype">Type </a></td>
 				<td> Profile </td>
-				<td> Reserve Now! </td>
+				
 				</tr>
 				<c:forEach var = "myvar" items="${results}">
 				<tr>
@@ -59,6 +60,7 @@
 				<td> ${myvar.getInterests()} </td>
 				</tr>
 				</c:forEach>
+				</tbody>
 				</table>
 				</div>
 
