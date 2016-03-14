@@ -28,9 +28,10 @@
 		</div>
 	</div>
 
-	<div class="jumbotron">
+	<div class="jumbotron" >
 		<div class="container">
 			<h1 class="tbackground2">Captain list:</h1>
+				<div >
 				<table border=1>
 				<tr>
 				<td> Name </td>
@@ -59,6 +60,7 @@
 				</tr>
 				</c:forEach>
 				</table>
+				</div>
 
 		</div>
 	</div>

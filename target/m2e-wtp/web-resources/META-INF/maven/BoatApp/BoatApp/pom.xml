@@ -42,10 +42,17 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.6</version>
 		</dependency>
-	
-		</dependencies>
-	
-		
+
+		<dependency>
+			<groupId>com.efsavage.jquery</groupId>
+			<artifactId>jquery-maven</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+
+
+	</dependencies>
+
+
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>

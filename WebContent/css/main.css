@@ -36,6 +36,11 @@
   -webkit-box-decoration-break: clone;
 }
 
+.tablebackground1{
+	background-color: rgba(255,255,255);
+	opacity: 1;
+}
+
 .form-group{
     width: 400px;
     height: 35px;
