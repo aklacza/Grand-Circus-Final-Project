@@ -1,10 +1,5 @@
 package controller1;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
@@ -12,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import UserDAOPackage.UserDAO;
@@ -37,8 +33,8 @@ public class ControllerClass1 {
 		UserDAO dao = new UserDAO();
 		// dao.insertUserMethod
 		dao.submitHostData(hmodel);
-
-		return new ModelAndView("success", "message", hmodel.toString());
+		ArrayList<hostModel> hosts = dao.viewHostData();
+		return new ModelAndView("listCaptains", "results", hosts);
 	}
 
 	@RequestMapping("/signup")
@@ -59,40 +55,24 @@ public class ControllerClass1 {
 	@RequestMapping("/listCaptains")
 	public ModelAndView listCaptains() {
 		UserDAO dao = new UserDAO();
-		ResultSet results = dao.viewHostData();
-		
-		ArrayList<hostModel> hostList = new ArrayList<hostModel>();
-		
-		try {
-			while (results.next()) {
-				
-				hostModel temp = new hostModel();
-				temp.setId(results.getInt(1));
-				temp.setFname(results.getString(2));
-				temp.setLname(results.getString(3));
-				temp.setEmail(results.getString(4));
-				temp.setAddress(results.getString(5));
-				temp.setCity(results.getString(6));
-				temp.setState(results.getString(7));
-				temp.setZip(results.getString(8));
-				temp.setCapacity(results.getInt(9));
-				temp.setType(results.getString(10));
-				temp.setProfile(results.getString(11));
-				temp.setInterests(results.getString(12));
-				hostList.add(temp);
-//			    for (int i = 1; i <= columns; i++) {
-//			        message.append(results.getString(i) + " ");
-//			        
-//			        hostList.add(results.getString(i));
-//			    }
-//			    message.append("\n");
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-
-		return new ModelAndView("listCaptains", "results", hostList);
+		ArrayList<hostModel> hosts = dao.viewHostData();
+		return new ModelAndView("listCaptains", "results", hosts);
 	}
+	
+	@RequestMapping(value="/listCaptainsByCity", method=RequestMethod.GET)
+	public ModelAndView listCaptainsByCity(@RequestParam("city")String city) {
+		UserDAO dao = new UserDAO();
+		ArrayList<hostModel> hosts = dao.viewHostDataByCity(city);
+		return new ModelAndView("listCaptains", "results", hosts);
+	}
+	
+	@RequestMapping(value="/listCaptainsByType", method=RequestMethod.GET)
+	public ModelAndView listCaptainsByType(@RequestParam("type")String type) {
+		UserDAO dao = new UserDAO();
+		ArrayList<hostModel> hosts = dao.viewHostDataByType(type);
+		return new ModelAndView("listCaptains", "results", hosts);
+	}
+	
 
 	@RequestMapping("/learnMore")
 	public ModelAndView learnMore() {

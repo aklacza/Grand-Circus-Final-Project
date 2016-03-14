@@ -42,12 +42,12 @@
 			<a href="learnMore.html" class="tbackground1"><span>Learn more </span></a>
 			<br>
 			
-			<form>
+			<form id="search" action="listCaptainsByCity" method="get">
 				<fieldset class="form-group">
 				
 				<input type="submit" class="tbackground1" value="Search" style="float: right">
 				<div style="overflow: hidden; padding-right: .5em;">
-				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search by City">
+				<input required="required" type="text" class="form-control" name="city" placeholder="Search by City">
     			</div>
 				
 				</fieldset>	
@@ -62,32 +62,32 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img
-							src="img/canoe.jpg">
+						<a href="listCaptainsByType?type=canoe"><img title="Search for Canoes"
+							src="img/canoe.jpg"></a>
 					</div>
 					<div class="thumbnail">
-						<img
-							src="img/jet.jpg">
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail">
-						<img
-							src="img/kayak.jpg">
-					</div>
-					<div class="thumbnail">
-						<img
-							src="img/pontoon.jpg">
+						<a href="listCaptainsByType?type=jet"><img title="Search for Jet Skis"
+							src="img/jet.jpg"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img
-							src="img/motoryachtcruising.jpg">
+						<a href="listCaptainsByType?type=kayak"><img title="Search for Kayaks"
+							src="img/kayak.jpg"></a>
 					</div>
 					<div class="thumbnail">
-						<img
-							src="img/motor-yacht-onaction.jpg">
+						<a href="listCaptainsByType?type=motor"><img title="Search for Pontoon Boats"
+							src="img/pontoon.jpg"></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a href="listCaptainsByType?type=motor"><img title="Search for Sail Boats"
+							src="img/sailingonaction.jpg"></a>
+					</div>
+					<div class="thumbnail">
+						<a href="listCaptainsByType?type=motor"><img title="Search for Yachts"
+							src="img/motor-yacht-onaction.jpg"></a>
 					</div>
 				</div>
 			</div>

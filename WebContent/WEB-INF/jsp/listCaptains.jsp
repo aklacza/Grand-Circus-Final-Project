@@ -14,7 +14,7 @@
 <div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><a href="boatBuddy.jsp">Boat Buddy</a></li>
+				<li><a href="index.jsp">Boat Buddy</a></li>
 				
 			</ul>
 			<ul class="pull-right">

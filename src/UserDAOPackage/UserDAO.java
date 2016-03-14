@@ -1,19 +1,13 @@
 package UserDAOPackage;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
-
-import org.springframework.web.servlet.ModelAndView;
 
 import model.hostModel;
 
-import java.util.List;
-import java.util.Scanner;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
@@ -48,14 +42,72 @@ public class UserDAO {
 		}
 	}
 	
-	public ResultSet viewHostData() { 
+	public ArrayList<hostModel> viewHostData() { 
 		try (Connection connection = getConnection()) {
 			System.out.println("viewHostData method started");
 			String st = "SELECT * FROM boatsharedb.boathosts;";
 			PreparedStatement statement = connection.prepareStatement(st);
 			ResultSet results = statement.executeQuery();
+			ArrayList<hostModel> hosts = new ArrayList<hostModel>();
+			while (results.next()) {
+				hostModel host = new hostModel();
+				host.setId(results.getInt(1));
+				host.setFname(results.getString(2));
+				host.setLname(results.getString(3));
+				host.setEmail(results.getString(4));
+				host.setAddress(results.getString(5));
+				host.setCity(results.getString(6));
+				host.setState(results.getString(7));
+				host.setZip(results.getString(8));
+				host.setCapacity(results.getInt(9));
+				host.setType(results.getString(10));
+				host.setProfile(results.getString(11));
+				host.setInterests(results.getString(12));
+				hosts.add(host);
+			}
 			statement.close();
-			return results;
+			return hosts;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public ArrayList<hostModel> viewHostDataByCity(String city) { 
+		String query = "SELECT * FROM boatsharedb.boathosts Where City like \"%"+city+"%\";";
+		return searchDBByInputQuery(query);
+	}
+
+	public ArrayList<hostModel> viewHostDataByType(String type) { 
+		String query = "SELECT * FROM boatsharedb.boathosts Where boattype like \"%"+type+"%\";";
+		return searchDBByInputQuery(query);
+	}
+	
+	private ArrayList<hostModel> searchDBByInputQuery(String query) {
+		try (Connection connection = getConnection()) {
+			System.out.println("viewHostDataByCity method started");
+			PreparedStatement statement = connection.prepareStatement(query);
+			ResultSet results = statement.executeQuery();
+			ArrayList<hostModel> hosts = new ArrayList<hostModel>();
+			while (results.next()) {
+				hostModel host = new hostModel();
+				host.setId(results.getInt(1));
+				host.setFname(results.getString(2));
+				host.setLname(results.getString(3));
+				host.setEmail(results.getString(4));
+				host.setAddress(results.getString(5));
+				host.setCity(results.getString(6));
+				host.setState(results.getString(7));
+				host.setZip(results.getString(8));
+				host.setCapacity(results.getInt(9));
+				host.setType(results.getString(10));
+				host.setProfile(results.getString(11));
+				host.setInterests(results.getString(12));
+				hosts.add(host);
+			}
+			statement.close();
+			return hosts;
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -93,7 +145,6 @@ public class UserDAO {
 			return c;
 
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 
 			return null;

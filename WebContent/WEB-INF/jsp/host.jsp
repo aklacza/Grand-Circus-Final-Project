@@ -12,16 +12,22 @@
 </head>
 <body>
 	<div class="nav">
-      <div class="container">
-        <ul class= "pull-left">
-          <li><a href="index.jsp">Home</a></li>
-          <li><a href="host.html">Host</a></li>
-        </ul>
-        <ul class="pull-right">
-          <li><a href="login.html">Log In</a></li>
-          <li><a href="help.html">Help</a></li>
-        </ul>
-      </div>
+		<div class="container">
+			<ul class="pull-left">
+				<li><a href="index.jsp">Home</a></li>
+				<li><a href="aboutUs.jsp">About Us</a></li>
+				
+			</ul>
+			<ul class="pull-right">
+				<li><a href="host.html">Become a Host</a></li>
+				<li><a href="signup.html">Sign Up</a></li>
+				<li><a href="login.html">Log In</a></li>
+				<li><a href="help.html">Help</a></li>
+				<li><a href="listCaptains.html">List Hosts</a></li>
+
+			</ul>
+		</div>
+	</div>
 
     
      <div class="jumbotron">
@@ -45,12 +51,12 @@
 			
 			Guest Capacity: <br><input type="text" name="capacity" size="30"/></br>
 			Type of boat:<br>
-					<input type="radio" name="type" value="motor" checked> Motor boat<br>
-				   <input type="radio" name="type" value="sail"> Sail boat<br>
-		    Other: <br>
-		    	   <input type="radio" name="type" value="jetski"> Jet Ski<br>
-		    	   <input type="radio" name="type" value="canoe"> Canoe<br>
-		    	   <input type="radio" name="type" value="kayak"> kayak<br>
+					<input type="radio" name="type" value="Motor Boat" checked> Motor Boat<br>
+				   <input type="radio" name="type" value="Sail Boat"> Sail Boat<br>
+		    	   <input type="radio" name="type" value="Pontoon Boat"> Pontoon Boat<br>
+		    	   <input type="radio" name="type" value="Jet Ski"> Jet Ski<br>
+		    	   <input type="radio" name="type" value="Canoe"> Canoe<br>
+		    	   <input type="radio" name="type" value="Kayak"> Kayak<br>
 			<br>
 			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
 		<br><input type="submit" name="Submit" /><br>
