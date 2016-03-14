@@ -29,21 +29,22 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="tbackground2">What is Boat Buddy?</h1>
-			<p> How many times have you gone to the marina on a beautiful summer day, and seen a marina full of boats?</p>
-			<p> Boat buddy was envisioned to solve this problem by connecting people who own boats with people who want to go boating</p>
+			<p class="tbackground2"> How many times have you gone to the marina on a beautiful summer day, and seen a marina full of boats?</p>
+			<p class="tbackground2"> Boat buddy was envisioned to solve this problem by connecting people who own boats (Boat Hosts) with people who want to go boating: Shipmates</p>
 		</div>
 		<div class="boat-guides">
-			<div class="container">
-			<h2>Become a Host!</h2>
+			<div class="container" style="clear: none; display=inline">
+			<h2 style="width=50%; display=inline"">Become a Host!</h2>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="thumbnail">
 						<img src="img/canoe.jpg">
 					</div>
 				</div>
-			<h2>Become a Shipmate!</h2>
+				
+			<h2 style="width=50%; display=inline">Become a Shipmate!</h2>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="thumbnail">
 						<img src="img/canoe.jpg">
 					</div>

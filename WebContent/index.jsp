@@ -117,6 +117,7 @@
 					</p>
 					<a href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook
 						of Michigan Boating Laws</a>
+						<br>
 				</div>
 				<div class="col-md-4">
 					<h3>Share us on Facebook!</h3>
@@ -126,6 +127,7 @@
 			</div>
 		</div>
 	</div>
+	
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script
