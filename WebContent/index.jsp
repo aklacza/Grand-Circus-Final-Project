@@ -12,6 +12,8 @@
 
 <link rel="stylesheet" href="css/main.css">
 
+ 
+
 </head>
 <body>
 
@@ -116,12 +118,29 @@
 					<a href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook
 						of Michigan Boating Laws</a>
 				</div>
+				<div class="col-md-4">
+					<h3>Share us on Facebook!</h3>
+					<p>We appreciate your support!</p>
+					<div class="fb-share-button" data-href="http://www.boatbuddy.xyz/" data-layout="button"></div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script
 		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+		
+		
 </body>
 </html>
