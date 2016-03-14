@@ -56,6 +56,8 @@ public class ControllerClass1 {
 	public ModelAndView listCaptains() {
 		UserDAO dao = new UserDAO();
 		ArrayList<hostModel> hosts = dao.viewHostData();
+		if (hosts==null)
+			new ModelAndView("error", "error", "no data !!!");
 		return new ModelAndView("listCaptains", "results", hosts);
 	}
 	
