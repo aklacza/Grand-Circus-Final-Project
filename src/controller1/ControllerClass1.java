@@ -1,6 +1,13 @@
 package controller1;
 
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -53,11 +60,12 @@ public class ControllerClass1 {
 	}
 
 	@RequestMapping("/listCaptains")
-	public ModelAndView listCaptains() {
+	public ModelAndView listCaptains() throws NamingException, SQLException {
 		UserDAO dao = new UserDAO();
 		ArrayList<hostModel> hosts = dao.viewHostData();
-		if (hosts==null)
-			new ModelAndView("error", "error", "no data !!!");
+		
+		
+		
 		return new ModelAndView("listCaptains", "results", hosts);
 	}
 	
