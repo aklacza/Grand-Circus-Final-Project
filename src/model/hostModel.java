@@ -49,6 +49,7 @@ public class hostModel {
 		this.type = type;
 	}
 
+	@Override
 	public String toString() {
 
 		return  "id: " + id +
