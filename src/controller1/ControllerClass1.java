@@ -32,8 +32,8 @@ public class ControllerClass1 {
 		UserDAO dao = new UserDAO();
 		// dao.insertUserMethod
 		dao.submitHostData(hmodel);
-
-		return new ModelAndView("success", "message", hmodel.toString());
+		ArrayList<hostModel> hosts = dao.viewHostData();
+		return new ModelAndView("listCaptains", "results", hosts);
 	}
 
 	@RequestMapping("/signup")
