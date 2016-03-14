@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import UserDAOPackage.UserDAO;
@@ -57,6 +58,21 @@ public class ControllerClass1 {
 		ArrayList<hostModel> hosts = dao.viewHostData();
 		return new ModelAndView("listCaptains", "results", hosts);
 	}
+	
+	@RequestMapping(value="/listCaptainsByCity", method=RequestMethod.GET)
+	public ModelAndView listCaptainsByCity(@RequestParam("city")String city) {
+		UserDAO dao = new UserDAO();
+		ArrayList<hostModel> hosts = dao.viewHostDataByCity(city);
+		return new ModelAndView("listCaptains", "results", hosts);
+	}
+	
+	@RequestMapping(value="/listCaptainsByType", method=RequestMethod.GET)
+	public ModelAndView listCaptainsByType(@RequestParam("type")String type) {
+		UserDAO dao = new UserDAO();
+		ArrayList<hostModel> hosts = dao.viewHostDataByType(type);
+		return new ModelAndView("listCaptains", "results", hosts);
+	}
+	
 
 	@RequestMapping("/learnMore")
 	public ModelAndView learnMore() {

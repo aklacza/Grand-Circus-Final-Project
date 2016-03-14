@@ -51,12 +51,12 @@
 			
 			Guest Capacity: <br><input type="text" name="capacity" size="30"/></br>
 			Type of boat:<br>
-					<input type="radio" name="type" value="motor" checked> Motor boat<br>
-				   <input type="radio" name="type" value="sail"> Sail boat<br>
-		    Other: <br>
-		    	   <input type="radio" name="type" value="jetski"> Jet Ski<br>
-		    	   <input type="radio" name="type" value="canoe"> Canoe<br>
-		    	   <input type="radio" name="type" value="kayak"> kayak<br>
+					<input type="radio" name="type" value="Motor Boat" checked> Motor Boat<br>
+				   <input type="radio" name="type" value="Sail Boat"> Sail Boat<br>
+		    	   <input type="radio" name="type" value="Pontoon Boat"> Pontoon Boat<br>
+		    	   <input type="radio" name="type" value="Jet Ski"> Jet Ski<br>
+		    	   <input type="radio" name="type" value="Canoe"> Canoe<br>
+		    	   <input type="radio" name="type" value="Kayak"> Kayak<br>
 			<br>
 			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
 		<br><input type="submit" name="Submit" /><br>

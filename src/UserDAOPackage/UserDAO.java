@@ -73,6 +73,47 @@ public class UserDAO {
 			return null;
 		}
 	}
+	
+	public ArrayList<hostModel> viewHostDataByCity(String city) { 
+		String query = "SELECT * FROM boatsharedb.boathosts Where City like \"%"+city+"%\";";
+		return searchDBByInputQuery(query);
+	}
+
+	public ArrayList<hostModel> viewHostDataByType(String type) { 
+		String query = "SELECT * FROM boatsharedb.boathosts Where boattype like \"%"+type+"%\";";
+		return searchDBByInputQuery(query);
+	}
+	
+	private ArrayList<hostModel> searchDBByInputQuery(String query) {
+		try (Connection connection = getConnection()) {
+			System.out.println("viewHostDataByCity method started");
+			PreparedStatement statement = connection.prepareStatement(query);
+			ResultSet results = statement.executeQuery();
+			ArrayList<hostModel> hosts = new ArrayList<hostModel>();
+			while (results.next()) {
+				hostModel host = new hostModel();
+				host.setId(results.getInt(1));
+				host.setFname(results.getString(2));
+				host.setLname(results.getString(3));
+				host.setEmail(results.getString(4));
+				host.setAddress(results.getString(5));
+				host.setCity(results.getString(6));
+				host.setState(results.getString(7));
+				host.setZip(results.getString(8));
+				host.setCapacity(results.getInt(9));
+				host.setType(results.getString(10));
+				host.setProfile(results.getString(11));
+				host.setInterests(results.getString(12));
+				hosts.add(host);
+			}
+			statement.close();
+			return hosts;
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 
 	public hostModel getHostById(int id) {
 		try (Connection connection = getConnection()) {
