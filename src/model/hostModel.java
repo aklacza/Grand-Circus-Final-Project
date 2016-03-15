@@ -6,6 +6,7 @@ public class hostModel {
 	private String fname;
 	private String lname;
 	private String email;
+	private String password;
 	private String address;
 	private String city;
 	private String state;
@@ -82,6 +83,14 @@ public class hostModel {
 
 	public String getLname() {
 		return lname;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public void setLname(String lname) {

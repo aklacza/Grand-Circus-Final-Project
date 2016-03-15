@@ -27,16 +27,17 @@ public class UserDAO {
 			statement.setString(1, newHostData.getFname());
 			statement.setString(2, newHostData.getLname());
 			statement.setString(3, newHostData.getEmail());
-			statement.setString(4, newHostData.getAddress());
-			statement.setString(5, newHostData.getCity());
-			statement.setString(6, newHostData.getState());
-			statement.setString(7, newHostData.getZip());
-			statement.setInt(8, newHostData.getCapacity());
-			statement.setString(9, newHostData.getType());
+			statement.setString(4, newHostData.getPassword());
+			statement.setString(5, newHostData.getAddress());
+			statement.setString(6, newHostData.getCity());
+			statement.setString(7, newHostData.getState());
+			statement.setString(8, newHostData.getZip());
+			statement.setInt(9, newHostData.getCapacity());
+			statement.setString(10, newHostData.getType());
 //The picture will go here	
-			statement.setString(10,newHostData.getPictureurl());
-			statement.setString(11, newHostData.getProfile());
-			statement.setString(12, newHostData.getInterests());  
+			statement.setString(11,newHostData.getPictureurl());
+			statement.setString(12, newHostData.getProfile());
+			statement.setString(13, newHostData.getInterests());  
 			System.out.println(statement.executeUpdate());
 			statement.close();
 		} catch (Exception e) {
