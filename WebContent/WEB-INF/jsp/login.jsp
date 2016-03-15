@@ -30,9 +30,16 @@
       <div class="container">
         <h1 class="tbackground2">Log in!</h1>
 
-		<form id ="loginForm" action="" method="GET">
+		<form id ="loginForm" action="processLogin.html" method="POST">
+		<select name="userType">
+						<option selected="selected" disabled="disabled">Search
+							by:</option>
+						<option value="boathosts">Boat Host</option>
+						<option value="shipmates">Shipmate</option>
+						</select></br>
+		
 		    E-mail: <br><input type="text" name="email" size="35" required/><br>
-		    password: <br><input type="text" name="address" size="35"required/><br>
+		    password: <br><input type="password" name="password" size="35"required/><br>
 		    <br><input type="submit" name="Submit" />
 		</form>
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
