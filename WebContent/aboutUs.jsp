@@ -46,36 +46,39 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img
-							src="img/akza.jpg">
+						<a href="https://github.com/aklacza"><img title= "Andrew Kacza"
+							src="img/akza.jpg"></a>
 					</div>
-					<h3>Explore Lake Saint Clair with Andrew!</h3>
+					
 					<div class="thumbnail">
 						<img
 							src="img/sailing-yacht-171900_640.jpg">
 					</div>
+					<h5>Explore Lake Saint Clair with Andrew!</h5>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img
-							src="img/diana_r_miller222.jpg">
+						<a href="https://github.com/DianaRMiller"><img title="Diana Miller"
+							src="img/diana_r_miller222.jpg"></a>
 					</div>
-					<h3>Relax in style with Diana!</h3>
+					
 					<div class="thumbnail">
 						<img
 							src="img/DMyacht.jpg">
 					</div>
 				</div>
+				<h5>Relax in style with Diana!</h5>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<img
-							src="img/matt.jpg">
+						<a href="https://github.com/mh-anderson"><img title="Matt Anderson"
+							src="img/matt.jpg"></a>
 					</div>
-					<h3>Chill after work with Matt!</h3>
+					
 					<div class="thumbnail">
 						<img
 							src="img/pontoon-891830_640.jpg">
 					</div>
+					<h5>Chill after work with Matt!</h5>
 				</div>
 			</div>
 		</div>
