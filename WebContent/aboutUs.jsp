@@ -42,43 +42,41 @@
       
 	<div class="boat-guides">
 		<div class="container">
-			<h2>Boat Buddy founders & Hosts!</h2>
+			<h2>Meet our founders!</h2>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="https://github.com/aklacza"><img title= "Andrew Kacza"
+						<a href="http://www.grandcircus.co/java.php?preview=all"><img title= "Andrew Kacza"
 							src="img/akza.jpg"></a>
 					</div>
-					
-					<div class="thumbnail">
-						<img
-							src="img/sailing-yacht-171900_640.jpg">
-					</div>
 					<h5>Explore Lake Saint Clair with Andrew!</h5>
+					<div class="thumbnail">
+					<a href="listCaptainsByType?type=motor"><img
+							title="Search for Sail Boats" src="img/sailing-yacht-171900_640.jpg"></a>
+					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="https://github.com/DianaRMiller"><img title="Diana Miller"
+						<a href="http://www.grandcircus.co/java.php?preview=all"><img title="Diana Miller"
 							src="img/diana_r_miller222.jpg"></a>
 					</div>
-					
+					<h5>Relax in style with Diana!</h5>
 					<div class="thumbnail">
-						<img
-							src="img/DMyacht.jpg">
+						<a href="listCaptainsByType?type=motor"><img
+							title="Search for Yachts" src="img/DMyacht.jpg"></a>
 					</div>
 				</div>
-				<h5>Relax in style with Diana!</h5>
+				
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="https://github.com/mh-anderson"><img title="Matt Anderson"
+						<a href="http://www.grandcircus.co/java.php?preview=all"><img title="Matt Anderson"
 							src="img/matt.jpg"></a>
 					</div>
-					
-					<div class="thumbnail">
-						<img
-							src="img/pontoon-891830_640.jpg">
-					</div>
 					<h5>Chill after work with Matt!</h5>
+					<div class="thumbnail">
+						<a href="listCaptainsByType?type=motor"><img
+							title="Search for Pontoon Boats" src="img/pontoon-891830_640.jpg"></a>
+					</div>
 				</div>
 			</div>
 		</div>

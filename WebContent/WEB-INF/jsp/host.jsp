@@ -44,7 +44,7 @@
 			E-mail: <br><input type="text" name="email" size="30"/><br>
 		    <br>
 			<h2>Tell us about your Boat!</h2>
-			Please select a file to upload : <input type="file" name="file" /></br>
+			Please select a file to upload : <input type="file" name="file" size="30"/></br>
 			<br>
 			Boat Address: <br><input type="text" name="address" size="30"/><br>
 			Boat City: <br><input type="text" name="city" size="30"/><br>
