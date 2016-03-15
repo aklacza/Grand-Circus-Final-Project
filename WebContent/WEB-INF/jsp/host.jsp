@@ -42,6 +42,7 @@
 			 <input type="text" name="fname" size="30"/><br>
 			Last name: <br><input type="text" name="lname" size="30"/><br>
 			E-mail: <br><input type="text" name="email" size="30"/><br>
+			Password: <br><input type="text" name="address" size="35"required/><br>
 		    <br>
 			<h2>Tell us about your Boat!</h2>
 			Please select a file to upload : <input type="file" name="file" size="30"/></br>

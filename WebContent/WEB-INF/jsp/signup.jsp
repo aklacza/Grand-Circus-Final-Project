@@ -39,7 +39,9 @@
 				First name:<br> <input type="text" name="fname" size="35"
 					style="width: 100%" required /><br> Last name: <br>
 				<input type="text" name="lname" size="35" style="width: 100%"
-					required /><br> E-mail: <br>
+					required /><br> Password: <br>
+				<input type="text" name="address" size="35"required/><br>
+					 				E-mail: <br>
 				<input type="text" name="email" size="35" style="width: 100%"
 					required /><br> Address: <br>
 				<input type="text" name="address" size="35" style="width: 100%"
