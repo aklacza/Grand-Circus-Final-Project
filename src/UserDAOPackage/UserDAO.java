@@ -12,6 +12,8 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
+import org.apache.catalina.connector.Request;
+
 public class UserDAO {
 
 	public void submitHostData(hostModel newHostData) { //FINISH THIS!!!
@@ -19,7 +21,7 @@ public class UserDAO {
 			System.out.println("submitHostData method started");
 			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `address`, "
 					+ "`city`, `state`, `zip`, `peoplecapicity`, `boattype`, "
-					+ "`picture`, `profile`, `interests`) "
+					+ "`pictureurl`, `profile`, `interests`) "
 					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 			PreparedStatement statement = connection.prepareStatement(st);
 			statement.setString(1, newHostData.getFname());
@@ -32,7 +34,7 @@ public class UserDAO {
 			statement.setInt(8, newHostData.getCapacity());
 			statement.setString(9, newHostData.getType());
 //The picture will go here	
-			statement.setString(10, "");
+			statement.setString(10,newHostData.getPictureurl());
 			statement.setString(11, newHostData.getProfile());
 			statement.setString(12, newHostData.getInterests());  
 			System.out.println(statement.executeUpdate());
@@ -78,7 +80,18 @@ public class UserDAO {
 		String query = "SELECT * FROM boatsharedb.boathosts Where City like \"%"+city+"%\";";
 		return searchDBByInputQuery(query);
 	}
+	
+	public ArrayList<hostModel> viewHostDataBySearch(String searchInput, String type) { 
+		String query = "SELECT * FROM boatsharedb.boathosts Where "+type+" like \"%"+searchInput+"%\";";
+		return searchDBByInputQuery(query);
+	}
 
+	public ArrayList<hostModel> viewHostDataBySearch1(String searchInput, String type, String sort) { 
+			String query = "Select * from (SELECT * FROM boatsharedb.boathosts Where "+type+" like \"%"+searchInput+"%\";) sort by " +sort+";";
+			return searchDBByInputQuery(query);
+	}
+	
+	
 	public ArrayList<hostModel> viewHostDataByType(String type) { 
 		String query = "SELECT * FROM boatsharedb.boathosts Where boattype like \"%"+type+"%\";";
 		return searchDBByInputQuery(query);

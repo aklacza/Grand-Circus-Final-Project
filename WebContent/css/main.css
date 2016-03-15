@@ -8,7 +8,6 @@
 }
 
 
-
 .tbackground{
   background: rgba(255,255,255,0.3);
   border-radius: 7px ;
@@ -139,6 +138,10 @@ form#signupForm{
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#signupForm > input {
+	
 }
 
 form#hostSignup{
