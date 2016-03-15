@@ -21,7 +21,7 @@ public class UserDAO {
 			System.out.println("submitHostData method started");
 			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `address`, "
 					+ "`city`, `state`, `zip`, `peoplecapicity`, `boattype`, "
-					+ "`picture`, `profile`, `interests`) "
+					+ "`pictureurl`, `profile`, `interests`) "
 					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 			PreparedStatement statement = connection.prepareStatement(st);
 			statement.setString(1, newHostData.getFname());
@@ -34,7 +34,7 @@ public class UserDAO {
 			statement.setInt(8, newHostData.getCapacity());
 			statement.setString(9, newHostData.getType());
 //The picture will go here	
-			statement.setString(10, "");
+			statement.setString(10,newHostData.getPictureurl());
 			statement.setString(11, newHostData.getProfile());
 			statement.setString(12, newHostData.getInterests());  
 			System.out.println(statement.executeUpdate());

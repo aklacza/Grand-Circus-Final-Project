@@ -14,8 +14,16 @@ public class hostModel {
 	private String type;
 	private String profile;
 	private String interests;
-	//private String picture;
+	private String pictureurl;
 	
+	public String getPictureurl() {
+		return pictureurl;
+	}
+
+	public void setPictureurl(String pictureurl) {
+		this.pictureurl = pictureurl;
+	}
+
 	public String getProfile() {
 		return profile;
 	}

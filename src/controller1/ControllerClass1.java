@@ -1,8 +1,10 @@
 package controller1;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Map;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -15,7 +17,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 
 import UserDAOPackage.UserDAO;
 import model.hostModel;
@@ -27,6 +33,30 @@ public class ControllerClass1 {
 	public ModelAndView helloWorld() {
 		return new ModelAndView("welcome", "message", "Hello World");
 	}
+	
+	@RequestMapping("/uploadpage")
+	public ModelAndView uploadpage() {
+		return new ModelAndView("uploadFile", "message", "Upload");
+	}
+	
+	@RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
+	public ModelAndView uploadFiles(@RequestParam("file") MultipartFile file) {
+		System.out.println("upload: " + file.getOriginalFilename());
+		
+		Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
+				  "cloud_name", "boatbuddy",
+				  "api_key", "269413132897232",
+				  "api_secret", "tYEn-N_-QEvQK2aIofqBu-PGOl0"));
+		
+		try {
+			Map uploadResult = cloudinary.uploader().upload(file.getBytes(), ObjectUtils.emptyMap());
+			System.out.println(uploadResult.get("url"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return new ModelAndView("uploadFile", "message", "Hello World");
+	}
 
 	@RequestMapping("/host")
 	public ModelAndView hostView() {
@@ -35,8 +65,24 @@ public class ControllerClass1 {
 
 	// @RequestMapping("/hostSubmit")
 	@RequestMapping(value = "/hostSubmit", method = RequestMethod.POST)
-	public ModelAndView hostViewSubmit(@ModelAttribute hostModel hmodel, Model model) {
+	public ModelAndView hostViewSubmit(@RequestParam("file") MultipartFile file, @ModelAttribute hostModel hmodel, Model model) {
+		String urlPic = "";
+		System.out.println("upload: " + file.getOriginalFilename());
 		System.out.println("hostViewSubmit" + hmodel.getFname());
+		Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
+				  "cloud_name", "boatbuddy",
+				  "api_key", "269413132897232",
+				  "api_secret", "tYEn-N_-QEvQK2aIofqBu-PGOl0"));
+		
+		try {
+			Map uploadResult = cloudinary.uploader().upload(file.getBytes(), ObjectUtils.emptyMap());
+			urlPic = (String) uploadResult.get("url");
+			hmodel.setPictureurl(urlPic);
+			System.out.println(urlPic);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		UserDAO dao = new UserDAO();
 		// dao.insertUserMethod
 		dao.submitHostData(hmodel);

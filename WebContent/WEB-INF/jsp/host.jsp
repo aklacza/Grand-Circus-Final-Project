@@ -37,13 +37,14 @@
 				</div><br>
 		<div class="boat-guides">
 		<div class="container">
-			<form id="hostSignup" action="${pageContext.request.contextPath}/hostSubmit" method="POST">
+			<form id="hostSignup" action="${pageContext.request.contextPath}/hostSubmit" enctype="multipart/form-data" method="POST">
 			First name:<br>
 			 <input type="text" name="fname" size="30"/><br>
 			Last name: <br><input type="text" name="lname" size="30"/><br>
 			E-mail: <br><input type="text" name="email" size="30"/><br>
 		    <br>
 			<h2>Tell us about your Boat!</h2>
+			Please select a file to upload : <input type="file" name="file" /></br>
 			<br>
 			Boat Address: <br><input type="text" name="address" size="30"/><br>
 			Boat City: <br><input type="text" name="city" size="30"/><br>
