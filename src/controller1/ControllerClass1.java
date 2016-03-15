@@ -64,15 +64,25 @@ public class ControllerClass1 {
 		UserDAO dao = new UserDAO();
 		ArrayList<hostModel> hosts = dao.viewHostData();
 		
-		
-		
 		return new ModelAndView("listCaptains", "results", hosts);
 	}
 	
-	@RequestMapping(value="/listCaptainsByCity", method=RequestMethod.GET)
-	public ModelAndView listCaptainsByCity(@RequestParam("city")String city) {
+	@RequestMapping(value="/listCaptainsBySearch", method=RequestMethod.GET)
+	public ModelAndView listCaptainsBySearch
+	(@RequestParam("searchInput")String searchInput, 
+			@RequestParam("searchType")String searchType)	{
 		UserDAO dao = new UserDAO();
-		ArrayList<hostModel> hosts = dao.viewHostDataByCity(city);
+		ArrayList<hostModel> hosts = dao.viewHostDataBySearch(searchInput, searchType);
+		return new ModelAndView("listCaptains", "results", hosts);
+	}
+	
+	@RequestMapping(value="/listCaptainsBySearch1", method=RequestMethod.GET)
+	public ModelAndView listCaptainsBySearch1
+	(@RequestParam("searchInput")String searchInput, 
+		@RequestParam("searchType")String searchType, 
+		@RequestParam("searchType")String sort)	{
+		UserDAO dao = new UserDAO();
+		ArrayList<hostModel> hosts = dao.viewHostDataBySearch1(searchInput, searchType, sort);
 		return new ModelAndView("listCaptains", "results", hosts);
 	}
 	

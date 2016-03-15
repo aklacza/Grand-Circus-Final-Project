@@ -12,6 +12,8 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
+import org.apache.catalina.connector.Request;
+
 public class UserDAO {
 
 	public void submitHostData(hostModel newHostData) { //FINISH THIS!!!
@@ -78,7 +80,18 @@ public class UserDAO {
 		String query = "SELECT * FROM boatsharedb.boathosts Where City like \"%"+city+"%\";";
 		return searchDBByInputQuery(query);
 	}
+	
+	public ArrayList<hostModel> viewHostDataBySearch(String searchInput, String type) { 
+		String query = "SELECT * FROM boatsharedb.boathosts Where "+type+" like \"%"+searchInput+"%\";";
+		return searchDBByInputQuery(query);
+	}
 
+	public ArrayList<hostModel> viewHostDataBySearch1(String searchInput, String type, String sort) { 
+			String query = "Select * from (SELECT * FROM boatsharedb.boathosts Where "+type+" like \"%"+searchInput+"%\";) sort by " +sort+";";
+			return searchDBByInputQuery(query);
+	}
+	
+	
 	public ArrayList<hostModel> viewHostDataByType(String type) { 
 		String query = "SELECT * FROM boatsharedb.boathosts Where boattype like \"%"+type+"%\";";
 		return searchDBByInputQuery(query);

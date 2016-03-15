@@ -32,7 +32,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1 class="tbackground2">Boat Buddies!</h1>
-        <p class="tbackground2">Founded in March of 2016 and based in Detroit, MI in the need to connect people and the beautiful waters tha Michigan has to offer!
+        <p class="tbackground2">Founded in March of 2016 and based in Detroit, MI in the need to connect people and the beautiful waters that Michigan has to offer!
         Boat Buddy will become a trusted community marketplace for people to list, discover, and book boats in Michigan and Canada!
         Any user can access our web page on any computer, mobile phone or tablet. Whether a boat afternoon, a fishing trip, a weekend trip to
         Canada, or visit the Atlantic for a month, Boat Buddy connects people to unique water experiences, at any price point! 
