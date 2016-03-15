@@ -16,8 +16,8 @@
 	<div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><img src="img/logo.png"><a href="index.jsp">Boat
-						Buddy</a></li>
+				<li><img src="img/logo.png" height=50px width=50px><a
+					href="index.jsp">Boat Buddy</a></li>
 			</ul>
 			<ul class="pull-right">
 				<li><a href="aboutUs.jsp">About Us</a></li>
@@ -32,7 +32,7 @@
 
 	<div style="height: 100%;" class="jumbotron">
 		<div class="container">
-			<center><h1>Sign up for Boat Buddy as a Shipmate:</h1></center>
+			<center><h1 class="tbackground2">Sign up for Boat Buddy as a Shipmate:</h1></center>
 			<br>
 
 			<form id="signupForm" action="" method="GET" style="">
@@ -53,7 +53,7 @@
 				<input type="text" name="zip" size="35" style="width: 100%" required /><br>
 				Brief profile:<br>
 				<input name="profile" size="35" style="height: 5em; width: 100%;"
-					type="text"><br> <input type="submit" name="Submit" />
+					type="text"><br> <input type="submit" name="Submit" value="Signup!"/>
 			</form>
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 			<script

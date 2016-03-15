@@ -14,7 +14,8 @@
 <div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><img src="img/logo.png"><a href="index.jsp">Boat Buddy</a></li>
+				<li><img src="img/logo.png" height=50px width=50px><a
+					href="index.jsp">Boat Buddy</a></li>
 			</ul>
 			<ul class="pull-right">
 				<li><a href="aboutUs.jsp">About Us</a></li>

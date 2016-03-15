@@ -17,15 +17,13 @@ th, td {
 }
 </style>
 
-<script type="text/javascript" src="/path/to/jquery-latest.js"></script> 
+<script type="text/javascript" src="/path/to/jquery-latest.js"></script>
 <script type="text/javascript" src="/path/to/jquery.tablesorter.js"></script>
 
 <script>
-$(document).ready(function() 
-    { 
-        $("#hosts").tablesorter(); 
-    } 
-);
+	$(document).ready(function() {
+		$("#hosts").tablesorter();
+	});
 </script>
 
 </head>
@@ -36,16 +34,16 @@ $(document).ready(function()
 	<div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><a href="index.jsp">Boat Buddy</a></li>
-
+				<li><img src="img/logo.png" height=50px width=50px><a
+					href="index.jsp">Boat Buddy</a></li>
 			</ul>
 			<ul class="pull-right">
 				<li><a href="host.html">Become a Host</a></li>
 				<li><a href="signup.html">Sign Up</a></li>
 				<li><a href="login.html">Log In</a></li>
-				<li><a href="help.html">Help</a></li>
-				<li><a href="listCaptains.html">List Hosts</a></li>
 
+				<li><a href="listCaptains.html">List Hosts</a></li>
+				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
 	</div>
@@ -56,7 +54,8 @@ $(document).ready(function()
 			<h4>Click heading to sort.</h4>
 			<div>
 				<table border=1 class="tablesorter" id="hosts">
-					<thead style="opacity: 1; background-color: rgba(255, 255, 255, 0.8);">
+					<thead
+						style="opacity: 1; background-color: rgba(255, 255, 255, 0.8);">
 						<tr>
 							<th>Picture</th>
 							<th>Name</th>
@@ -70,12 +69,14 @@ $(document).ready(function()
 							<th><a href="listCaptainsBySearch1?sort=boattype">Type </a></th>
 							<th>Profile</th>
 						</tr>
-						</thead>
-						<tbody style="opacity: 1; background-color: rgba(255, 255, 255, 0.7);">
+					</thead>
+					<tbody
+						style="opacity: 1; background-color: rgba(255, 255, 255, 0.7);">
 						<c:forEach var="myvar" items="${results}">
 							<tr>
-								<td><img src="${myvar.getPictureurl()}" width="80%" height="80%"></td>
-								<td>${myvar.getFname()} ${myvar.getLname()}</td>
+								<td><img src="${myvar.getPictureurl()}" width="80%"
+									height="80%"></td>
+								<td>${myvar.getFname()}${myvar.getLname()}</td>
 								<td>${myvar.getEmail()}</td>
 								<td>${myvar.getAddress()}</td>
 								<td>${myvar.getCity()}</td>
@@ -96,7 +97,7 @@ $(document).ready(function()
 	<%
 		if (request.getParameter("searchInput") != null) {
 	%>
-		
+
 	<%
 		}
 	%>

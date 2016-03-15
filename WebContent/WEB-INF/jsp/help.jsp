@@ -12,7 +12,8 @@
 	<div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><img src="img/logo.png"><a href="index.jsp">Boat Buddy</a></li>
+				<li><img src="img/logo.png" height=50px width=50px><a
+					href="index.jsp">Boat Buddy</a></li>
 			</ul>
 			<ul class="pull-right">
 				<li><a href="aboutUs.jsp">About Us</a></li>
@@ -21,6 +22,7 @@
 				<li><a href="login.html">Log In</a></li>
 				<li><a href="listCaptains.html">List Hosts</a></li>
 				<li><a href="help.html">Help</a></li>
+				
 			</ul>
 		</div>
 	</div>
@@ -30,7 +32,7 @@
 			<h1 class="tbackground2">Boat Buddy Help!</h1>
 			
 		<p class="tbackground2">We want to here from you!<br>
-		Email us at: <a href="mailto:boatbuddydetroit@gmail.com?Subject=Hello%20again" target="_top">boatbuddydetroit@gmail.com</a></p><br>
+		Email us at: <a style="color: white" href="mailto:boatbuddydetroit@gmail.com?Subject=Hello%20again" target="_top">boatbuddydetroit@gmail.com</a></p><br>
 		<form action="mailto:boatbuddydetroit@gmail.com?Subject=Hello%20again" method="post" enctype="text/plain">
 		Name:<br>
 		<input type="text" name="name" value="your name"><br>
