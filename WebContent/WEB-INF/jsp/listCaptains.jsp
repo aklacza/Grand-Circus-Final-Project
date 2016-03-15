@@ -74,7 +74,7 @@ $(document).ready(function()
 						<tbody>
 						<c:forEach var="myvar" items="${results}">
 							<tr>
-								<td><img src="img/logo.png" height=50px width=50px></td>
+								<td><img src="${myvar.getPictureurl()}" width="50px" height="50px"></td>
 								<td>${myvar.getFname()} ${myvar.getLname()}</td>
 								<td>${myvar.getEmail()}</td>
 								<td>${myvar.getAddress()}</td>

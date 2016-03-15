@@ -53,6 +53,7 @@ public class UserDAO {
 			ArrayList<hostModel> hosts = new ArrayList<hostModel>();
 			while (results.next()) {
 				hostModel host = new hostModel();
+				host.setPictureurl(results.getString(11));
 				host.setId(results.getInt(1));
 				host.setFname(results.getString(2));
 				host.setLname(results.getString(3));
