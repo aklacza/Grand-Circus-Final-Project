@@ -5,9 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Be a Boat Buddy Host</title>
-<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 </head>
 <body>
@@ -29,13 +29,14 @@
 		</div>
 	</div>
 
-    
-     <div class="jumbotron">
-     <div class="container">
-		<h1 class="tbackground2">Become a Buddy Host!</h1>
+    	<div class="jumbotron">
+		<div class="container">
+			<h1 class="tbackground2">Become a Buddy Host!</h1>
 			<p class="tbackground2">Rent a Boat from local hosts in all of
 				Michigan's most popular marinas!</p>
-
+				</div><br>
+		<div class="boat-guides">
+		<div class="container">
 			<form id="hostSignup" action="${pageContext.request.contextPath}/hostSubmit" method="POST">
 			First name:<br>
 			 <input type="text" name="fname" size="30"/><br>
@@ -78,6 +79,8 @@
 			  }
 			});
 			</script>
+		  </div>
+		</div>
 	</div>
  </div>
 </div>	

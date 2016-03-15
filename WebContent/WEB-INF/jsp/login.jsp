@@ -5,29 +5,55 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Boat Buddy Login</title>
+<link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 <div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><a href="index.jsp">Home</a></li>
-				<li><a href="aboutUs.jsp">About Us</a></li>
-				
+				<li><img src="img/logo.png"><a href="index.jsp">Boat Buddy</a></li>
 			</ul>
 			<ul class="pull-right">
+				<li><a href="aboutUs.jsp">About Us</a></li>
 				<li><a href="host.html">Become a Host</a></li>
 				<li><a href="signup.html">Sign Up</a></li>
-				<li><a href="login.html">Log In</a></li>
-				<li><a href="help.html">Help</a></li>
 				<li><a href="listCaptains.html">List Hosts</a></li>
-
+				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
 	</div>
+    
+     <div class="jumbotron">
+      <div class="container">
+        <h1 class="tbackground2">Log in!</h1>
 
-
-Login
-
+		<form id ="loginForm" action="" method="GET">
+		    E-mail: <br><input type="text" name="email" size="35" required/><br>
+		    password: <br><input type="text" name="address" size="35"required/><br>
+		    <br><input type="submit" name="Submit" />
+		</form>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+		<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+		<script>
+		
+		jQuery.validator.setDefaults({
+		});
+		$( "#loginForm" ).validate({
+		  rules: {
+		    field: {
+		      required: true
+		      
+		    }
+		  }
+		});
+		
+		</script>
+	</div>
+ </div>
+</body>
 </body>
 </html>

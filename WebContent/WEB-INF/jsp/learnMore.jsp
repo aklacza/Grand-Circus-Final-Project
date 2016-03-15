@@ -13,15 +13,14 @@
 <div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><a href="boatBuddy.jsp">Boat Buddy</a></li>
+				<li><img src="img/logo.png"><a href="index.jsp">Boat Buddy</a></li>
 			</ul>
 			<ul class="pull-right">
 				<li><a href="host.html">Become a Host</a></li>
 				<li><a href="signup.html">Sign Up</a></li>
 				<li><a href="login.html">Log In</a></li>
-				<li><a href="help.html">Help</a></li>
 				<li><a href="listCaptains.html">List Hosts</a></li>
-
+				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
 	
@@ -39,7 +38,8 @@
 			
 				<div class="col-md-6">
 					<div class="thumbnail">
-						<img src="img/canoe.jpg">
+					<a href="host.html"><img title="Become a Buddy Host"
+							src="img/captain.jpg"></a>
 					</div>
 				</div>
 			</div>
@@ -48,7 +48,8 @@
 			<h2 >Become a Shipmate!</h2>
 				<div class="col-md-6">
 					<div class="thumbnail">
-						<img src="img/canoe.jpg">
+					<a href="signup.html"><img title="Become a Shipmate"
+							src="img/shipmate.png"></a>
 					</div>
 				</div>
 			</div>					

@@ -16,17 +16,15 @@
 <div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><a href="index.jsp">Home</a></li>
-				<li><a href="aboutUs.jsp">About Us</a></li>
-				
+				<li><img src="img/logo.png"><a href="index.jsp">Boat Buddy</a></li>
 			</ul>
 			<ul class="pull-right">
+				<li><a href="aboutUs.jsp">About Us</a></li>
 				<li><a href="host.html">Become a Host</a></li>
 				<li><a href="signup.html">Sign Up</a></li>
 				<li><a href="login.html">Log In</a></li>
-				<li><a href="help.html">Help</a></li>
 				<li><a href="listCaptains.html">List Hosts</a></li>
-
+				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
 	</div>
@@ -82,7 +80,7 @@
 			</div>
 		</div>
 	</div>  
-<br><h4>Thank you to the Grand Circus staff, our Teacher Kamel & TA Maurice. Wanna make awesome Java applications? Visit:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h4> 
+<br><h5>Thank you to Grand Circus staff, our Teacher Kamel & TA Maurice. Learn how to do awesome Java applications at:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h5> 
 </div>
 </body>
 </html>
