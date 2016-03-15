@@ -62,7 +62,7 @@ $(document).ready(function()
 							<th>Name</th>
 							<th>Email</th>
 							<th>Address</th>
-							<th><a href="listCaptainsbySearch1?sort=city">City </a></th>
+							<th><a href="listCaptainsBySort?sort=city">City </a></th>
 							<th><a href="listCaptainsBySort?sort=state">State</a></th>
 							<th>Zip</th>
 							<th><a href="listCaptainsBySort?sort=peoplecapicity">Guest
@@ -71,10 +71,10 @@ $(document).ready(function()
 							<th>Profile</th>
 						</tr>
 						</thead>
-						<tbody>
+						<tbody style="opacity: 1; background-color: rgba(255, 255, 255, 0.7);">
 						<c:forEach var="myvar" items="${results}">
 							<tr>
-								<td><img src="${myvar.getPictureurl()}" width="50px" height="50px"></td>
+								<td><img src="${myvar.getPictureurl()}" width="80%" height="80%"></td>
 								<td>${myvar.getFname()} ${myvar.getLname()}</td>
 								<td>${myvar.getEmail()}</td>
 								<td>${myvar.getAddress()}</td>
