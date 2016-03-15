@@ -46,20 +46,26 @@
 					more </span></a> <br>
 
 			<form id="search" action="listCaptainsBySearch" method="get">
-				<fieldset class="form-group">
+				<fieldset>
 					<input type="submit" class="tbackground1" value="Search"
 						style="float: right">
-					<div style="overflow: hidden; padding-right: .5em;">
+					<p style="float: left; padding-right: 8px">Search for a </p>
+					<select	name="searchType" style="float: left" class="tbackground1">
+							<option style="float: right" selected="selected" disabled="disabled">boat type:</option>
+							<option value="Motor Boat">Motor Boat</option>
+							<option value="Sail Boat">Sail Boat</option>
+							<option value="Pontoon Boat">Pontoon Boat</option>
+							<option value="Jet Ski">Jet Ski</option>
+							<option value="Canoe">Canoe</option>
+							<option value="Kayak">Kayak</option>
+						</select>
+						<p style="float: left; padding-left: 5px" > in  </p>
+					
+					<div style="overflow: hidden; padding-right: .5em; padding-left: .5em;">
 						<input required="required" type="text" class="form-control"
-							name="searchInput" placeholder="Enter search...">
-							<select name="searchType">
-						<option selected="selected" disabled="disabled">Search
-							by:</option>
-						<option value="boattype">Boat type</option>
-						<option value="city">City</option>
-						<option value="state">State</option>
-						<option value="zip">Zip code</option>
-					</select> 
+							name="searchInput" placeholder="Select city..."> 
+							
+						
 					</div>
 				</fieldset>
 			</form>

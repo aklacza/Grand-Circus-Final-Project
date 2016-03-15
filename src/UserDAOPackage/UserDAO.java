@@ -55,7 +55,7 @@ public class UserDAO {
 	}
 	
 	public ArrayList<hostModel> viewHostDataBySearch(String searchInput, String type) { 
-		String query = "SELECT * FROM boatsharedb.boathosts Where "+type+" like \"%"+searchInput+"%\";";
+		String query = "SELECT * FROM boatsharedb.boathosts where boattype = \""+type+"\" and city = \""+searchInput+"\";";
 		return searchDBByInputQuery(query);
 	}
 

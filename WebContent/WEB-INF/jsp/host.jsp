@@ -14,16 +14,19 @@
 	<div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><a href="index.jsp">Home</a></li>
-				<li><a href="aboutUs.jsp">About Us</a></li>
+				<li><img src="img/logo.png" height=50px width=50px><a
+					href="index.jsp">Boat Buddy</a></li>
+				
 				
 			</ul>
 			<ul class="pull-right">
+			<li><a href="aboutUs.jsp">About Us</a></li>
 				<li><a href="host.html">Become a Host</a></li>
 				<li><a href="signup.html">Sign Up</a></li>
 				<li><a href="login.html">Log In</a></li>
-				<li><a href="help.html">Help</a></li>
+				
 				<li><a href="listCaptains.html">List Hosts</a></li>
+				<li><a href="help.html">Help</a></li>
 
 			</ul>
 		</div>
@@ -32,8 +35,7 @@
     	<div class="jumbotron">
 		<div class="container">
 			<h1 class="tbackground2">Become a Buddy Host!</h1>
-			<p class="tbackground2">Rent a Boat from local hosts in all of
-				Michigan's most popular marinas!</p>
+			<p class="tbackground2">Sign up to rent your boat to Shipmates near you!</p>
 				</div><br>
 		<div class="boat-guides">
 		<div class="container">
@@ -42,10 +44,10 @@
 			 <input type="text" name="fname" size="30"/><br>
 			Last name: <br><input type="text" name="lname" size="30"/><br>
 			E-mail: <br><input type="text" name="email" size="30"/><br>
-		    <br>
+		   
 			<h2>Tell us about your Boat!</h2>
-			Please select a file to upload : <input type="file" name="file" size="30"/></br>
-			<br>
+			Please select a picture to upload : <input type="file" name="file" size="30"/></br>
+			
 			Boat Address: <br><input type="text" name="address" size="30"/><br>
 			Boat City: <br><input type="text" name="city" size="30"/><br>
 			Boat State: <br><input type="text" name="state" size="30"/><br>
@@ -61,7 +63,7 @@
 		    	   <input type="radio" name="type" value="Kayak"> Kayak<br>
 			<br>
 			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
-		<br><input type="submit" name="Submit" /><br>
+		<br><input type="submit" name="Submit" value="Become a host!"/><br>
 		</form>
 		
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
