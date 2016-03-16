@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Boat Buddy Login</title>
+<title>Boat Buddy Gallery</title>
 <link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 
@@ -25,43 +26,15 @@
 				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
-	</div>
-    
+
      <div class="jumbotron">
       <div class="container">
-        <h1 class="tbackground2">Log in!</h1>
-
-		<form id ="loginForm" action="processLogin.html" method="POST">
-		<select name="userType">
-						<option selected="selected" disabled="disabled">Search
-							by:</option>
-						<option value="boathosts">Boat Host</option>
-						<option value="shipmates">Shipmate</option>
-						</select></br>
-		
-		    E-mail: <br><input type="text" name="email" size="35" required/><br>
-		    password: <br><input type="password" name="password" size="35"required/><br>
-		    <br><input type="submit" name="Submit" />
-		</form>
-		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-		<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
-		<script>
-		
-		jQuery.validator.setDefaults({
-		});
-		$( "#loginForm" ).validate({
-		  rules: {
-		    field: {
-		      required: true
-		      
-		    }
-		  }
-		});
-		
-		</script>
+        <h1 class="tbackground2">Welcome to Boat Buddy Gallery!</h1>
+	 </div>
 	</div>
- </div>
-</body>
+</div>
+
+<h4>To contact a Boat Host, please sign up to Become a Shipmate!</h4>
 </body>
 </html>
+</div>
