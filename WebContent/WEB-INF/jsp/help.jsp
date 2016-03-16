@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>BOAT BUDDY HELP!!!</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="/BoatApp/css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 	<div class="nav">

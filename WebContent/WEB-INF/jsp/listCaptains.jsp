@@ -9,7 +9,7 @@
 <title>List of captains</title>
 <link rel="stylesheet"
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="/BoatApp/css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 
 <style>
 th, td {
@@ -28,8 +28,6 @@ th, td {
 
 </head>
 <body>
-
-
 
 	<div class="nav">
 		<div class="container">
