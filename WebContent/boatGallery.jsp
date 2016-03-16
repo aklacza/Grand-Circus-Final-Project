@@ -37,4 +37,3 @@
 <h4>To contact a Boat Host, please sign up to Become a Shipmate!</h4>
 </body>
 </html>
-</div>
