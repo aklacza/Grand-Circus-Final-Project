@@ -32,20 +32,19 @@
 		</div>
 	</div>
 
-    	<div class="jumbotron">
+    	<div class="jumbotron" style="height: 100%;">
 		<div class="container">
 			<h1 class="tbackground2">Become a Buddy Host!</h1>
 			<p class="tbackground2">Sign up to rent your boat to Shipmates near you!</p>
 				</div><br>
-		<div class="boat-guides">
 		<div class="container">
 			<form id="hostSignup" action="${pageContext.request.contextPath}/hostSubmit" enctype="multipart/form-data" method="POST">
 			First name:<br>
 			 <input type="text" name="fname" size="30"/><br>
 			Last name: <br><input type="text" name="lname" size="30"/><br>
 			E-mail (this is your username for Login: <br><input type="text" name="email" size="30"/><br>
-			Password: <br><input type="password" name="password" size="35"required/><br>
-		    <br>
+			Password: <br><input type="password" name="password" size="30"required/><br>
+	
 			<h2>Tell us about your Boat!</h2>
 			Please select a picture to upload : <input type="file" name="file" size="30"/></br>
 			
@@ -63,8 +62,9 @@
 		    	   <input type="radio" name="type" value="Canoe"> Canoe<br>
 		    	   <input type="radio" name="type" value="Kayak"> Kayak<br>
 			<br>
-			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
-		<br><input type="submit" name="Submit" value="Become a host!"/><br>
+			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/>
+		<br><input type="submit" name="Submit" value="Become a host!"/>
+		<p style="color: blue">Already registered? <a href="signup.html"> Sign in </a></p>
 		</form>
 		
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -84,7 +84,6 @@
 			});
 			</script>
 		  </div>
-		</div>
 	</div>
  </div>
 </div>	
