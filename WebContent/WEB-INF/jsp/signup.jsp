@@ -44,8 +44,8 @@
 				<input type="text" name="email" size="35" style="width: 100%"
 					required />
 					
-					Password: <br>
-				<input type="password" name="password" size="35"required/><br>
+					Password: 
+				<input type="password" name="password" size="30"required/><br>
 					
 					
 					<br> Address: <br>
@@ -59,7 +59,9 @@
 				Brief profile:<br>
 				<input name="profile" size="35" style="height: 5em; width: 100%;"
 					type="text"><br> <input type="submit" name="Submit" value="Signup!"/>
+					<p>Already registered? <a href="signup.html"> Sign in </a></p>
 			</form>
+			
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 			<script
 				src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>

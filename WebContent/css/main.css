@@ -123,7 +123,7 @@ form#signupForm{
   margin: auto;
   position: relative;
   width: 300px;
-  height: 500px;
+  height: auto;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 14px;
   font-style: italic;
@@ -188,7 +188,7 @@ form#hostSignup{
   margin: auto;
   position: relative;
   width: 300px;
-  height: 950px;
+  height: auto;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 14px;
   font-style: italic;
