@@ -62,7 +62,8 @@
 
 .jumbotron {
   background-image:url('../img/IMG_1511.jpg');
-  height: 500px;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
