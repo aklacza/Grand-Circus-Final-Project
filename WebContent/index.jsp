@@ -51,8 +51,7 @@
 						style="float: right">
 					<p style="float: left; padding-right: 8px">Search for a </p>
 					<select	name="searchType" style="float: left" class="tbackground1">
-							<option style="float: right" selected="selected" disabled="disabled">boat type:</option>
-							<option value="Motor Boat">Motor Boat</option>
+							<option style="float: right" selected="selected" value="Motor Boat">Motor Boat</option>
 							<option value="Sail Boat">Sail Boat</option>
 							<option value="Pontoon Boat">Pontoon Boat</option>
 							<option value="Jet Ski">Jet Ski</option>
