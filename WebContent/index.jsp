@@ -26,9 +26,9 @@
 			<ul class="pull-right">
 				<li><a href="aboutUs.jsp">About Us</a></li>
 				<li><a href="host.html">Become a Host</a></li>
-				<li><a href="signup.html">Sign Up</a></li>
+				<li><a href="signup.html">Become a Shipmate</a></li>
 				<li><a href="login.html">Log In</a></li>
-				<li><a href="listCaptains.html">List Hosts</a></li>
+				<li><a href="boatGallery.jsp">Gallery</a></li>
 				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
@@ -38,7 +38,7 @@
 		<div class="container">
 			<h1 class="tbackground2">Find a Boat near you!</h1>
 			<p class="tbackground2">Boat Buddy connects people to unique
-				water experiences, at any price point! Whether you are a boat owner
+				water experiences! Whether you are a boat owner
 				or are looking to hit the water, you can enjoy endless sunsets,
 				fishing trips and weekend excursions on Michigan's most popular
 				lakes!</p>
@@ -51,8 +51,7 @@
 						style="float: right">
 					<p style="float: left; padding-right: 8px">Search for a </p>
 					<select	name="searchType" style="float: left" class="tbackground1">
-							<option style="float: right" selected="selected" disabled="disabled">boat type:</option>
-							<option value="Motor Boat">Motor Boat</option>
+							<option style="float: right" selected="selected" value="Motor Boat">Motor Boat</option>
 							<option value="Sail Boat">Sail Boat</option>
 							<option value="Pontoon Boat">Pontoon Boat</option>
 							<option value="Jet Ski">Jet Ski</option>
@@ -112,7 +111,7 @@
 	</div>
 
 	<div class="learn-more">
-		<div class="container">
+		<div class="container" style="transparency: 0.5">
 			<div class="row">
 
 				<div class="col-md-4">

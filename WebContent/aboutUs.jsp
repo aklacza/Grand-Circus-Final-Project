@@ -22,9 +22,9 @@
 			<ul class="pull-right">
 				<li><a href="aboutUs.jsp">About Us</a></li>
 				<li><a href="host.html">Become a Host</a></li>
-				<li><a href="signup.html">Sign Up</a></li>
+				<li><a href="signup.html">Become a Shipmate</a></li>
 				<li><a href="login.html">Log In</a></li>
-				<li><a href="listCaptains.html">List Hosts</a></li>
+				<li><a href="boatGallery.jsp">Gallery</a></li>
 				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
@@ -81,8 +81,9 @@
 				</div>
 			</div>
 		</div>
+		<br><h3 class="tbackground2" >Thank you to Grand Circus staff, our Teacher Kamel & TA Maurice. Learn how to do awesome Java applications at:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h3> 
 	</div>  
-<br><h5>Thank you to Grand Circus staff, our Teacher Kamel & TA Maurice. Learn how to do awesome Java applications at:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h5> 
+
 </div>
 </body>
 </html>

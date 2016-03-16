@@ -20,14 +20,14 @@
 			<ul class="pull-right">
 				<li><a href="aboutUs.jsp">About Us</a></li>
 				<li><a href="host.html">Become a Host</a></li>
-				<li><a href="signup.html">Sign Up</a></li>
-				<li><a href="listCaptains.html">List Hosts</a></li>
+				<li><a href="signup.html">Become a Shipmate</a></li>
+				<li><a href="boatGallery.jsp">Gallery</a></li>
 				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
 	</div>
     
-     <div class="jumbotron">
+     <div class="jumbotron" height="1000px">
       <div class="container">
         <h1 class="tbackground2">Log in!</h1>
 
