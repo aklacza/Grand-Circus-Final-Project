@@ -41,7 +41,7 @@ th, td {
 				<li><a href="host.html">Become a Host</a></li>
 				<li><a href="signup.html">Become a Shipmate</a></li>
 				<li><a href="login.html">Log In</a></li>
-				<li><a href="boatGallery.html">Boat Gallery</a></li>
+				<li><a href="boatGallery.html">Gallery</a></li>
 				<li><a href="help.html">Help</a></li>
 			</ul>
 		</div>
@@ -57,16 +57,12 @@ th, td {
 						style="opacity: 1; background-color: rgba(255, 255, 255, 0.8);">
 						<tr>
 							<th>Picture</th>
-							<th>Name</th>
-							<th>Email</th>
-							<th>Address</th>
-							<th><a href="listCaptainsBySort?sort=city">City </a></th>
-							<th><a href="listCaptainsBySort?sort=state">State</a></th>
+							<th>City</th>
+							<th>State</th>
 							<th>Zip</th>
-							<th><a href="listCaptainsBySort?sort=peoplecapicity">Guest
-									Capacity </a></th>
+							<th>Guest Capacity </th>
 							<th><a href="listCaptainsBySearch1?sort=boattype">Type </a></th>
-							<th>Profile</th>
+							
 						</tr>
 					</thead>
 					<tbody
@@ -75,15 +71,13 @@ th, td {
 							<tr>
 								<td width="250px"><img src="${myvar.getPictureurl()}" width="100%"
 									height=""></td>
-								<td>${myvar.getFname()}  ${myvar.getLname()}</td>
-								<td>${myvar.getEmail()}</td>
-								<td>${myvar.getAddress()}</td>
+								
 								<td>${myvar.getCity()}</td>
 								<td>${myvar.getState()}</td>
 								<td>${myvar.getZip()}</td>
 								<td>${myvar.getCapacity()}</td>
 								<td>${myvar.getType()}</td>
-								<td>${myvar.getInterests()}</td>
+								
 							</tr>
 						</c:forEach>
 					</tbody>

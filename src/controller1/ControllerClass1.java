@@ -150,4 +150,12 @@ public class ControllerClass1 {
 	public ModelAndView learnMore() {
 		return new ModelAndView("learnMore", "", "");
 	}
+	
+	@RequestMapping("/boatGallery")
+	public ModelAndView viewGallery() {
+		UserDAO dao = new UserDAO();
+		ArrayList<hostModel> hosts = dao.viewHostData();
+		return new ModelAndView("boatGallery", "results", hosts);
+	}
+	
 }
