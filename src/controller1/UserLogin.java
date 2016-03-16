@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -16,6 +17,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import UserDAOPackage.UserDAO;
+import model.hostModel;
 
 @Controller
 public class UserLogin {
@@ -36,7 +40,9 @@ public class UserLogin {
 				Cookie cookie = new Cookie("id", idStorage);
 				response.addCookie(cookie);
 				
-				return new ModelAndView("success", "message", "Welcome");	
+				UserDAO dao = new UserDAO();
+				ArrayList<hostModel> hosts = dao.viewHostData();
+				return new ModelAndView("listCaptains", "results", hosts);	
 			} else
 			{
 				return new ModelAndView("login", "message", "Access Denied");

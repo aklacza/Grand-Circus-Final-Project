@@ -43,13 +43,9 @@
 			First name:<br>
 			 <input type="text" name="fname" size="30"/><br>
 			Last name: <br><input type="text" name="lname" size="30"/><br>
-			E-mail: <br><input type="text" name="email" size="30"/><br>
-<<<<<<< HEAD
+			E-mail (this is your username for Login: <br><input type="text" name="email" size="30"/><br>
 			Password: <br><input type="password" name="password" size="35"required/><br>
 		    <br>
-=======
-		   
->>>>>>> 455374daf3e3e806d04aa4eae940545d62b1be3e
 			<h2>Tell us about your Boat!</h2>
 			Please select a picture to upload : <input type="file" name="file" size="30"/></br>
 			

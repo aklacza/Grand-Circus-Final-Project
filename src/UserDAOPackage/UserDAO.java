@@ -19,10 +19,10 @@ public class UserDAO {
 	public void submitHostData(hostModel newHostData) { //FINISH THIS!!!
 		try (Connection connection = getConnection()) {
 			System.out.println("submitHostData method started");
-			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `address`, "
+			String st = "INSERT INTO `boatsharedb`.`boathosts` (`fname`, `lname`, `email`, `password`,`address`, "
 					+ "`city`, `state`, `zip`, `peoplecapicity`, `boattype`, "
 					+ "`pictureurl`, `profile`, `interests`) "
-					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+					+ "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 			PreparedStatement statement = connection.prepareStatement(st);
 			statement.setString(1, newHostData.getFname());
 			statement.setString(2, newHostData.getLname());
@@ -88,14 +88,14 @@ public class UserDAO {
 				host.setFname(results.getString(2));
 				host.setLname(results.getString(3));
 				host.setEmail(results.getString(4));
-				host.setAddress(results.getString(5));
-				host.setCity(results.getString(6));
-				host.setState(results.getString(7));
-				host.setZip(results.getString(8));
-				host.setCapacity(results.getInt(9));
-				host.setType(results.getString(10));
-				host.setPictureurl(results.getString(11));
-				host.setInterests(results.getString(12));
+				host.setAddress(results.getString(6));
+				host.setCity(results.getString(7));
+				host.setState(results.getString(8));
+				host.setZip(results.getString(9));
+				host.setCapacity(results.getInt(10));
+				host.setType(results.getString(11));
+				host.setPictureurl(results.getString(12));
+				host.setInterests(results.getString(13));
 				hosts.add(host);
 			}
 			statement.close();

@@ -39,11 +39,16 @@
 				First name:<br> <input type="text" name="fname" size="35"
 					style="width: 100%" required /><br> Last name: <br>
 				<input type="text" name="lname" size="35" style="width: 100%"
-					required /><br> Password: <br>
-				<input type="password" name="password" size="35"required/><br>
-					 				E-mail: <br>
+					required /><br> 
+					 				E-mail (this is your username for Login): <br>
 				<input type="text" name="email" size="35" style="width: 100%"
-					required /><br> Address: <br>
+					required />
+					
+					Password: <br>
+				<input type="password" name="password" size="35"required/><br>
+					
+					
+					<br> Address: <br>
 				<input type="text" name="address" size="35" style="width: 100%"
 					required /><br> City: <br>
 				<input type="text" name="city" size="35" style="width: 100%"

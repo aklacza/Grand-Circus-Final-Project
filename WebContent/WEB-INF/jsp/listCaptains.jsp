@@ -74,9 +74,9 @@ th, td {
 						style="opacity: 1; background-color: rgba(255, 255, 255, 0.7);">
 						<c:forEach var="myvar" items="${results}">
 							<tr>
-								<td><img src="${myvar.getPictureurl()}" width="80%"
-									height="80%"></td>
-								<td>${myvar.getFname()}${myvar.getLname()}</td>
+								<td width="250px"><img src="${myvar.getPictureurl()}" width="100%"
+									height=""></td>
+								<td>${myvar.getFname()}  ${myvar.getLname()}</td>
 								<td>${myvar.getEmail()}</td>
 								<td>${myvar.getAddress()}</td>
 								<td>${myvar.getCity()}</td>
