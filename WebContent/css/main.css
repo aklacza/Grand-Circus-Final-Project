@@ -62,9 +62,12 @@
 
 .jumbotron {
   background-image:url('../img/IMG_1511.jpg');
-  height: 500px;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  
 }
 
 .jumbotron .container {
@@ -89,6 +92,7 @@
 .boat-guides {
     background-color:#bedcfa;
     border-bottom:1px solid #dbdbdb;
+    background-attachment: fixed;
 }
 
 .boat-guides h2 {

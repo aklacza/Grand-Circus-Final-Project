@@ -27,7 +27,7 @@
 		</div>
 	</div>
     
-     <div class="jumbotron">
+     <div class="jumbotron" height="1000px">
       <div class="container">
         <h1 class="tbackground2">Log in!</h1>
 

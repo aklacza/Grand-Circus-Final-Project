@@ -81,8 +81,9 @@
 				</div>
 			</div>
 		</div>
+		<br><h3 class="tbackground2" >Thank you to Grand Circus staff, our Teacher Kamel & TA Maurice. Learn how to do awesome Java applications at:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h3> 
 	</div>  
-<br><h5>Thank you to Grand Circus staff, our Teacher Kamel & TA Maurice. Learn how to do awesome Java applications at:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h5> 
+
 </div>
 </body>
 </html>

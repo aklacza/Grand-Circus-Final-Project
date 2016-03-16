@@ -38,7 +38,7 @@
 		<div class="container">
 			<h1 class="tbackground2">Find a Boat near you!</h1>
 			<p class="tbackground2">Boat Buddy connects people to unique
-				water experiences, at any price point! Whether you are a boat owner
+				water experiences! Whether you are a boat owner
 				or are looking to hit the water, you can enjoy endless sunsets,
 				fishing trips and weekend excursions on Michigan's most popular
 				lakes!</p>
@@ -111,7 +111,7 @@
 	</div>
 
 	<div class="learn-more">
-		<div class="container">
+		<div class="container" style="transparency: 0.5">
 			<div class="row">
 
 				<div class="col-md-4">
