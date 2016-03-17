@@ -45,7 +45,14 @@ opacity: .5;
 	color: #09C;
 }
 
+.container p{
+
+}
+
 .jumbotron p{
+}
+
+.white{
 	color: white;
 }
 
@@ -73,7 +80,7 @@ opacity: .5;
 	<div class="jumbotron">
 		<div class="container" style="padding-bottom: 30px; ">
 			<h1 class="tbackground2">Find a Boat near you!</h1>
-			<p class="tbackground2" >Boat Buddy connects people to unique
+			<p class="tbackground2 white" >Boat Buddy connects people to unique
 				water experiences! Whether you are a boat owner
 				or are looking to hit the water, you can enjoy endless sunsets,
 				fishing trips and weekend excursions on Michigan's most popular
@@ -90,7 +97,8 @@ opacity: .5;
 					<p style="float: left; padding-right: 8px">Search for a </p>
 						<select	name="searchType" style="float: left;
 						 position: relative;
-  							top: 50%;" 
+  							top: 50%;
+  							margin-top: 8px" 
   							 class="tbackground1">
 							<option style="float: right" selected="selected" value="Motor Boat">Motor Boat</option>
 							<option value="Sail Boat">Sail Boat</option>

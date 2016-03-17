@@ -16,6 +16,11 @@
 	background: rgba(255,255,255, .5);
 }
 
+.white{
+	color: white;
+	font-size: 20;
+}
+
 </style>
 
 
@@ -43,9 +48,9 @@
     <div class="jumbotron">
       <div class="container">
         <h1 class="tbackground2">Boat Buddies!</h1>
-        <p class="tbackground2">Founded in March of 2016 and based in Detroit, MI in the need to connect people and the beautiful waters that Michigan has to offer!
-        Boat Buddy will become a trusted community marketplace for people to list, discover, and book boats in Michigan and Canada!
-        Any user can access our web page on any computer, mobile phone or tablet. Whether a boat afternoon, a fishing trip, a weekend trip to
+        <p class="tbackground2 white">Founded in March of 2016 and based in Detroit, MI with the mission of connecting people and the beautiful waters that Michigan has to offer!
+        Boat Buddy will become a trusted community site for people to list and book boats in Michigan and Canada!
+        Any user can access our web page on any computer, mobile phone or tablet. For an afternoon on the lake, a fishing trip, a weekend trip to
         Canada, or visit the Atlantic for a month, Boat Buddy connects people to unique water experiences, at any price point! 
         Boat Buddy will become the friendliest way for people to monetize their unused boat and showcase it to everyone in the world!</p>
       </div></br>
@@ -60,7 +65,7 @@
 						<a href="http://www.grandcircus.co/java.php?preview=all"><img title= "Andrew Kacza"
 							src="img/akza.jpg"></a>
 					</div>
-					<h5>Explore Lake Saint Clair with Andrew!</h5>
+					<h4>Explore Lake Saint Clair with Andrew!</h4>
 					<div class="thumbnail">
 					<a href="listCaptainsByType?type=sail"><img
 							title="Search for Sail Boats" src="img/sailing-yacht-171900_640.jpg"></a>
@@ -71,7 +76,7 @@
 						<a href="http://www.grandcircus.co/java.php?preview=all"><img title="Diana Miller"
 							src="img/diana_r_miller222.jpg"></a>
 					</div>
-					<h5>Relax in style with Diana!</h5>
+					<h4>Relax in style with Diana!</h4>
 					<div class="thumbnail">
 						<a href="listCaptainsByType?type=motor"><img
 							title="Search for Motor Boats" src="img/DMyacht.jpg"></a>
@@ -83,7 +88,7 @@
 						<a href="http://www.grandcircus.co/java.php?preview=all"><img title="Matt Anderson"
 							src="img/matt.jpg"></a>
 					</div>
-					<h5>Chill after work with Matt!</h5>
+					<h4>Chill after work with Matt!</h4>
 					<div class="thumbnail">
 						<a href="listCaptainsByType?type=pontoon"><img
 							title="Search for Pontoon Boats" src="img/pontoon-891830_640.jpg"></a>
