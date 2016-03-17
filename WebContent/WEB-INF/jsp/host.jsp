@@ -44,8 +44,8 @@
 			E-mail (this is your username for Login: <br><input type="text" name="email" size="30"/><br>
 			Password: <br><input type="password" name="password" size="30"required/><br>
 	
-			<h2>Tell us about your Boat!</h2>
-			Please select a picture to upload : <input type="file" name="file" size="30"/></br>
+			<br><p style="color:gray">Tell us about your Boat!</p>
+			Please select a picture to upload : <input type="file" name="file" size="20"/></br>
 			
 			Boat Address: <br><input type="text" name="address" size="30"/><br>
 			Boat City: <br><input type="text" name="city" size="30"/><br>
@@ -60,12 +60,10 @@
 		    	   <input type="radio" name="type" value="Jet Ski"> Jet Ski<br>
 		    	   <input type="radio" name="type" value="Canoe"> Canoe<br>
 		    	   <input type="radio" name="type" value="Kayak"> Kayak<br>
-			<br>
-			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/>
-		<br><input type="submit" name="Submit" value="Become a host!"/>
-		<p style="color: blue">Already registered? <a href="signup.html"> Sign in </a></p>
+		Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
+		<br><input type="submit" name="Submit" value="Become a host!"/><br>
+		<br><p style="color: gray">Already registered? <a href="signup.html"> Sign in </a></p>
 		</form>
-		
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 			<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
 			<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>

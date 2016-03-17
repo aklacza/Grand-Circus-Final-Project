@@ -184,6 +184,7 @@ form#search{
 	
 }
 
+
 form#hostSignup{
   background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
   background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
@@ -191,7 +192,7 @@ form#hostSignup{
   background: rgba(255,255,255,0.8);
   margin: auto;
   position: relative;
-  width: 300px;
+  width: 350px;
   height: auto;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 14px;
@@ -209,6 +210,30 @@ form#hostSignup{
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
+  form#id{
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: rgba(255,255,255,0.8);
+  margin: 50px auto auto auto;
+  position: relative;
+  width: 80%;
+  height: 65px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	}
 
 gallery#thumbnails img{
 		height: 80px;
