@@ -48,8 +48,7 @@
 					required />
 					
 					Password: 
-				<input type="password" name="password" size="30"required/><br>
-					
+				<input style="width: 100%;" aria-required="true" name="password" size="30" required="" type="password">	
 					
 					<br> Address: <br>
 				<input type="text" name="address" size="35" style="width: 100%"
