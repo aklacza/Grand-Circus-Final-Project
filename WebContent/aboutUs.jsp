@@ -96,7 +96,7 @@
 				</div>
 			</div>
 		</div>
-		<br><h3 align=center class="tbackground2" >Thank you to Grand Circus staff, our Teacher Kamel & TA Maurice. Learn how to do awesome Java applications at:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h3> 
+		<br><h3 align=center >Thank you to Grand Circus staff, our Teacher Kamel & TA Maurice. Learn how to do awesome Java applications at:<a href="http://www.grandcircus.co/"> Grand Circus!</a></h3> 
 	</div>  
 
 </div>

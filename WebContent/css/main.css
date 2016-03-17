@@ -30,7 +30,8 @@
 }
 
 .tbackground2{
-	text-shadow: 3px 3px 3px rgb(55, 83, 108);
+/* 	text-shadow: 4px 4px 4px rgb(36, 54, 70); */
+	text-shadow: 4px 4px 8px black;
 }
 
 .tbackground1{
@@ -79,7 +80,9 @@
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
-  
+}
+
+.jumbotron img{
 }
 
 .jumbotron .container {
@@ -103,9 +106,12 @@
 }
 
 .boat-guides {
-    background-color: rgba(190,220,250, .75);
+    background-color: rgb(190,220,250);
     border-bottom:1px solid #dbdbdb;
     background-attachment: fixed;
+        box-shadow: 0 -4px 8px rgb(190,220,250);
+        margin-top: 8px;
+        
 }
 
 .boat-guides h2 {
@@ -120,6 +126,7 @@
 
 .learn-more {
   background-color: rgba(247,247,247, .9);
+  box-shadow: 0 4px 8px rgb(247,247,247);
 }
 
 .learn-more h3 {

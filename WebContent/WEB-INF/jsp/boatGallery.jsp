@@ -122,7 +122,7 @@ h4{
 
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="tbackground2" style="padding-bottom: 15px;">Boat gallery:</h1>
+			<h1 class="tbackground2" style="padding-bottom: 15px;">Boat Gallery</h1>
 			<div></div>
 		</div>
 	

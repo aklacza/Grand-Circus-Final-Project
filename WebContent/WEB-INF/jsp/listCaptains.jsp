@@ -128,17 +128,17 @@ h4{
 				<li><a class="hvr-underline-from-left" href="aboutUs.jsp">About Us</a></li>
 				<li><a class="hvr-underline-from-left" href="host.html">Become a Host</a></li>
 				<li><a class="hvr-underline-from-left" href="signup.html">Become a Shipmate</a></li>
-				<li><a class="hvr-underline-from-left" href="login.html">Log In</a></li>
+				<li><a class="hvr-underline-from-left" href="logout.html">Log Out</a></li>
 				<li><a class="hvr-underline-from-left" href="boatGallery.html">Boat Gallery</a></li>
 				<li><a class="hvr-underline-from-left" href="help.html">Help</a></li>
-				<li><a class="hvr-underline-from-left" href="logout.html">Log Out</a></li>
+				
 			</ul>
 		</div>
 	</div>
 
 	<div class="jumbotron">
 		<div class="container">
-			<h1 class="tbackground2" style="padding-bottom: 15px;">Boat gallery:</h1>
+			<h1 class="tbackground2" style="padding-bottom: 15px;">Boat Gallery</h1>
 			<div></div>
 		</div>
 	
