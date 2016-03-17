@@ -45,7 +45,7 @@ public class UserLogin {
 				return new ModelAndView("listCaptains", "results", hosts);	
 			} else
 			{
-				return new ModelAndView("login", "message", "Access Denied");
+				return new ModelAndView("login", "results", "Try Again");
 			}
 	}
 	

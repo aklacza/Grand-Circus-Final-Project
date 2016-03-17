@@ -8,10 +8,11 @@
 <link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
 
-<div class="nav">
+	<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
 				<li><img src="img/logo.png" height=50px width=50px><a
@@ -35,7 +36,7 @@
 		<select name="userType">
 						<option selected="selected" disabled="disabled">Search
 							by:</option>
-						<option value="boathosts">Boat Host</option>
+						<option value="boathosts" selected="selected">Boat Host</option>
 						<option value="shipmates">Shipmate</option>
 						</select></br>
 		
@@ -43,24 +44,27 @@
 		    password: <br><input type="password" name="password" size="35"required/><br>
 		    <br><input type="submit" name="Submit" />
 		</form>
+		
+		
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
 		<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+		
 		<script>
-		
-		jQuery.validator.setDefaults({
-		});
-		$( "#loginForm" ).validate({
-		  rules: {
-		    field: {
-		      required: true
+  		jQuery.validator.setDefaults({
+  		});
+  		$( "#loginForm" ).validate({
+  		  rules: {
+  		    field: {
+  		      required: true
 		      
-		    }
-		  }
-		});
-		
+  		    }
+  		  }
+ 		});
 		</script>
+		
 	</div>
+
  </div>
 </body>
 </body>

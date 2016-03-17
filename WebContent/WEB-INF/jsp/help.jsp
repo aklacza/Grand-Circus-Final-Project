@@ -6,10 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>BOAT BUDDY HELP!!!</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div class="nav">
+		<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
 				<li><img src="img/logo.png" height=50px width=50px><a

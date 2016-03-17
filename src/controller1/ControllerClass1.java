@@ -135,7 +135,7 @@ public class ControllerClass1 {
 	public ModelAndView listCaptainsByType(@RequestParam("type")String type) {
 		UserDAO dao = new UserDAO();
 		ArrayList<hostModel> hosts = dao.viewHostDataByType(type);
-		return new ModelAndView("listCaptains", "results", hosts);
+		return new ModelAndView("boatGallery", "results", hosts);
 	}
 	
 	@RequestMapping(value="/listCaptainsBySort", method=RequestMethod.GET)

@@ -20,11 +20,11 @@ th, td {
 }
 
 body {
-	font-family: "Aller", "sans-serif"; /* just a custom font */
+	/* font-family: "Aller", "sans-serif"; /* just a custom font */
 }
 
 ul {
-	list-style-type: none; /* hiding the bullets from ul */
+/* 	list-style-type: none; /* hiding the bullets from ul */ 
 }
 
 a:-webkit-any-link {
@@ -76,12 +76,25 @@ h1 { /* just a main title alignment */
 	height: auto;
 	border-radius: 0.4em 0.4em 0em 0em;
 	margin-left: 4px;
-margin-top: 4px;
+	margin-top: 4px;
 	/* radius should be the same as the wrapper */
 }
 
 p {
-	margin-left: 10px
+	margin-left: 10px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #09C;
+}
+
+h4{
+	font-family: Tahoma, Geneva, sans-serif;
+	line-height: 24px;
+	font-weight: bold;
+	color: #09C;
+
 }
 </style>
 
@@ -90,13 +103,14 @@ p {
 
 
 
-	<div class="nav">
+	<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><img height=50px width=50px src="img/logo.png" ><a
+				<li><img height=50px width=50px src="img/logo.png"><a
 					href="index.jsp">Boat Buddy</a></li>
 			</ul>
 			<ul class="pull-right">
+				<li><a href="aboutUs.jsp">About Us</a></li>
 				<li><a href="host.html">Become a Host</a></li>
 				<li><a href="signup.html">Become a Shipmate</a></li>
 				<li><a href="login.html">Log In</a></li>
@@ -118,8 +132,8 @@ p {
 				<ul>
 					<c:forEach var="myvar" items="${results}">
 						<li><figure class="img-wrapper fade"> <a
-								class="fancybox" href="${myvar.getPictureurl()}"><img class="img1"
-								src="${myvar.getPictureurl()}">
+								class="fancybox" href="${myvar.getPictureurl()}"><img
+								class="img1" src="${myvar.getPictureurl()}">
 								<h4>${myvar.getType()}</h4> </a>
 							<p>
 								City: ${myvar.getCity()} <br> State: ${myvar.getState()}<br>
