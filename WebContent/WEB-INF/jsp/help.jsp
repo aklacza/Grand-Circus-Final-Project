@@ -18,21 +18,18 @@
 			</ul>
 
 			<ul class="pull-right">
-<<<<<<< HEAD
 				<li><a href="aboutUs.jsp">About Us</a></li>
 				<li><a href="host.html">Become a Host</a></li>
 				<li><a href="signup.html">Become a Shipmate</a></li>
 				<li><a href="login.html">Log In</a></li>
 				<li><a href="boatGallery.html">Boat Gallery</a></li>
 				<li><a href="help.html">Help</a></li>
-=======
 				<li><a class="hvr-underline-from-left" href="aboutUs.jsp">About Us</a></li>
 				<li><a class="hvr-underline-from-left" href="host.html">Become a Host</a></li>
 				<li><a class="hvr-underline-from-left" href="signup.html">Become a Shipmate</a></li>
 				<li><a class="hvr-underline-from-left" href="login.html">Log In</a></li>
 				<li><a class="hvr-underline-from-left" href="boatGallery.html">Boat Gallery</a></li>
 				<li><a class="hvr-underline-from-left" href="help.html">Help</a></li>
->>>>>>> b108ac4cfb682f38ffab69272cf916cea4fc2010
 			</ul>
 		</div>
 	</div>
@@ -76,7 +73,7 @@
 						
 	</div>	
 </div>		
-<h4 class="tbackground2">Boat Buddy's is located at: 1570 Woodward Avenue Detroit, MI 48226 <a href="http://www.grandcircus.co/">www.grandcircus.co</h4><br>	
+<h4 class="tbackground2">Boat Buddy's is located at: 1570 Woodward Avenue Detroit, MI 48226 <a href="http://www.grandcircus.co/">www.grandcircus.co</a></h4><br>	
 <!-- 		<p class="tbackground2">We want to here from you!<br> -->
 <!-- 		Email us at: <a style="color: white" href="mailto:boatbuddydetroit@gmail.com?Subject=Hello%20again" target="_top">boatbuddydetroit@gmail.com</a></p><br> -->
 <!-- 		<form action="mailto:boatbuddydetroit@gmail.com?Subject=Hello%20again" method="post" enctype="text/plain"> -->
