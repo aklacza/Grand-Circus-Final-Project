@@ -91,18 +91,18 @@
 							title="Search for Kayaks" src="img/kayak.jpg"></a>
 					</div>
 					<div class="thumbnail">
-						<a href="listCaptainsByType?type=motor"><img
+						<a href="listCaptainsByType?type=pontoon"><img
 							title="Search for Pontoon Boats" src="img/pontoon.jpg"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="listCaptainsByType?type=motor"><img
+						<a href="listCaptainsByType?type=sail"><img
 							title="Search for Sail Boats" src="img/sailingonaction.jpg"></a>
 					</div>
 					<div class="thumbnail">
 						<a href="listCaptainsByType?type=motor"><img
-							title="Search for Yachts" src="img/motor-yacht-onaction.jpg"></a>
+							title="Search for Motor Boats" src="img/motor-yacht-onaction.jpg"></a>
 					</div>
 				</div>
 			</div>
