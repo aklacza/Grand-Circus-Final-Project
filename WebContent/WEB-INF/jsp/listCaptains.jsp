@@ -131,6 +131,7 @@ h4{
 				<li><a class="hvr-underline-from-left" href="login.html">Log In</a></li>
 				<li><a class="hvr-underline-from-left" href="boatGallery.html">Boat Gallery</a></li>
 				<li><a class="hvr-underline-from-left" href="help.html">Help</a></li>
+				<li><a class="hvr-underline-from-left" href="logout.html">Log Out</a></li>
 			</ul>
 		</div>
 	</div>
