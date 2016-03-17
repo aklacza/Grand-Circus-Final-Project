@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/hover.css">
 
 </head>
 <body>
@@ -15,15 +16,17 @@
 	<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><img src="img/logo.png" height=50px width=50px><a
+				<li><img src="img/logo.png" height=50px width=50px><a class="hvr-underline-from-left"
 					href="index.jsp">Boat Buddy</a></li>
 			</ul>
+
 			<ul class="pull-right">
-				<li><a href="aboutUs.jsp">About Us</a></li>
-				<li><a href="host.html">Become a Host</a></li>
-				<li><a href="signup.html">Become a Shipmate</a></li>
-				<li><a href="boatGallery.html">Boat Gallery</a></li>
-				<li><a href="help.html">Help</a></li>
+				<li><a class="hvr-underline-from-left" href="aboutUs.jsp">About Us</a></li>
+				<li><a class="hvr-underline-from-left" href="host.html">Become a Host</a></li>
+				<li><a class="hvr-underline-from-left" href="signup.html">Become a Shipmate</a></li>
+				<li><a class="hvr-underline-from-left" href="login.html">Log In</a></li>
+				<li><a class="hvr-underline-from-left" href="boatGallery.html">Boat Gallery</a></li>
+				<li><a class="hvr-underline-from-left" href="help.html">Help</a></li>
 			</ul>
 		</div>
 	</div>
@@ -42,7 +45,7 @@
 		
 		    E-mail: <br><input type="text" name="email" size="35" required/><br>
 		    password: <br><input type="password" name="password" size="35"required/><br>
-		    <br><input type="submit" name="Submit" />
+		    <br><input type="submit" name="Submit" value="Login"/>
 		</form>
 		
 		
