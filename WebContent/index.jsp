@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,10 +11,8 @@
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="css/main.css">
-
 </head>
 <body>
-
 	<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
@@ -45,7 +42,9 @@
 			<a href="learnMore.html" class="tbackground1"><span>Learn
 					more </span></a> <br>
 
-			<form id="search" action="listCaptainsBySearch" method="get">
+
+
+			<form id="search" action="listCaptainsBySearch1" method="get">
 				<fieldset>
 					<input type="submit" class="tbackground1" value="Search"
 						style="float: right">

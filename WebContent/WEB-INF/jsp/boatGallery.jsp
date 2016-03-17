@@ -14,8 +14,6 @@
 <link rel="stylesheet" type="text/css" media="screen"
 	href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
 
-
-
 <style>
 th, td {
 	padding: 5px;
@@ -86,15 +84,6 @@ p {
 	margin-left: 10px
 }
 </style>
-
-<script type="text/javascript" src="/path/to/jquery-latest.js"></script>
-<script type="text/javascript" src="/path/to/jquery.tablesorter.js"></script>
-
-<script>
-	$(document).ready(function() {
-		$("#hosts").tablesorter();
-	});
-</script>
 
 </head>
 <body>
