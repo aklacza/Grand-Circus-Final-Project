@@ -59,7 +59,7 @@
 				Brief profile:<br>
 				<input name="profile" size="35" style="height: 5em; width: 100%;"
 					type="text"><br> <input type="submit" name="Submit" value="Signup!"/>
-					<p>Already registered? <a href="signup.html"> Sign in </a></p>
+					<p style="color: #09C;">Already registered? <a href="signup.html"> Sign in </a></p>
 			</form>
 			
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>

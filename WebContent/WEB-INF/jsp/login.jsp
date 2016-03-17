@@ -42,7 +42,7 @@
 		
 		    E-mail: <br><input type="text" name="email" size="35" required/><br>
 		    password: <br><input type="password" name="password" size="35"required/><br>
-		    <br><input type="submit" name="Submit" />
+		    <br><input type="submit" name="Submit" value="Login"/>
 		</form>
 		
 		

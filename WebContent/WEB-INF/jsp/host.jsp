@@ -63,7 +63,7 @@
 			<br>
 			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/>
 		<br><input type="submit" name="Submit" value="Become a host!"/>
-		<p style="color: blue">Already registered? <a href="signup.html"> Sign in </a></p>
+		<p style="color: #09C;">Already registered? <a href="signup.html"> Sign in </a></p>
 		</form>
 		
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>

@@ -11,28 +11,64 @@
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/hover.css">
+
+<style>
+.thumbnail{
+	background:#3498db 
+/* 	rgba(255, 255, 255, .5); */
+	
+}
+
+.thumbnail img{
+opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+
+
+.thumbnail:hover img{
+opacity: .5;
+
+}
+
+.row h3 {
+	color:black;
+}
+
+.row p{
+	size: 10;
+	color: #09C;
+}
+
+.smalltext{
+font-size: 10;
+}
+
+</style>
 </head>
 <body>
 	<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><img src="img/logo.png" height=50px width=50px><a
+				<li><img src="img/logo.png" height=50px width=50px><a class="hvr-underline-from-left"
 					href="index.jsp">Boat Buddy</a></li>
 			</ul>
 
 			<ul class="pull-right">
-				<li><a href="aboutUs.jsp">About Us</a></li>
-				<li><a href="host.html">Become a Host</a></li>
-				<li><a href="signup.html">Become a Shipmate</a></li>
-				<li><a href="login.html">Log In</a></li>
-				<li><a href="boatGallery.html">Boat Gallery</a></li>
-				<li><a href="help.html">Help</a></li>
+				<li><a class="hvr-underline-from-left" href="aboutUs.jsp">About Us</a></li>
+				<li><a class="hvr-underline-from-left" href="host.html">Become a Host</a></li>
+				<li><a class="hvr-underline-from-left" href="signup.html">Become a Shipmate</a></li>
+				<li><a class="hvr-underline-from-left" href="login.html">Log In</a></li>
+				<li><a class="hvr-underline-from-left" href="boatGallery.html">Boat Gallery</a></li>
+				<li><a class="hvr-underline-from-left" href="help.html">Help</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="jumbotron">
-		<div class="container">
+		<div class="container" style="padding-bottom: 30px;">
 			<h1 class="tbackground2">Find a Boat near you!</h1>
 			<p class="tbackground2">Boat Buddy connects people to unique
 				water experiences! Whether you are a boat owner
@@ -47,7 +83,7 @@
 			<form id="search" action="listCaptainsBySearch1" method="get">
 				<fieldset>
 					<input type="submit" class="tbackground1" value="Search"
-						style="float: right">
+						style="float: right" >
 					<p style="float: left; padding-right: 8px">Search for a </p>
 					<select	name="searchType" style="float: left" class="tbackground1">
 							<option style="float: right" selected="selected" value="Motor Boat">Motor Boat</option>
@@ -68,7 +104,9 @@
 				</fieldset>
 			</form>
 		</div>
-	</div>
+		
+		
+	
 
 	<div class="boat-guides">
 		<div class="container">
@@ -77,7 +115,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="listCaptainsByType?type=canoe"><img
+						<a href="listCaptainsByType?type=canoe"><img 
 							title="Search for Canoes" src="img/canoe.jpg"></a>
 					</div>
 					<div class="thumbnail">
@@ -110,12 +148,12 @@
 	</div>
 
 	<div class="learn-more">
-		<div class="container" style="transparency: 0.5">
+		<div class="container" style="transparency: 0.5; padding-bottom:15px;">
 			<div class="row">
 
 				<div class="col-md-4">
 					<h3>Host</h3>
-					<p>Renting out your unused boat could pay your bills or fund
+					<p class="smalltext">Renting out your unused boat could pay your bills or fund
 						your next vacation.</p>
 					<p>
 						<a href="host.html">Learn more about becoming a Host!</a>
@@ -140,6 +178,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 
 
