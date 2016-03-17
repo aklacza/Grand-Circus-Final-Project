@@ -59,16 +59,11 @@
 		    	   <input type="radio" name="type" value="Jet Ski"> Jet Ski<br>
 		    	   <input type="radio" name="type" value="Canoe"> Canoe<br>
 		    	   <input type="radio" name="type" value="Kayak"> Kayak<br>
-<<<<<<< HEAD
-		Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
-		<br><input type="submit" name="Submit" value="Become a host!"/><br>
-		<br><p style="color: gray">Already registered? <a href="signup.html"> Sign in </a></p>
-=======
+
 			<br>
 			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/>
 		<br><input type="submit" name="Submit" value="Become a host!"/>
 		<p style="color: #09C;">Already registered? <a href="signup.html"> Sign in </a></p>
->>>>>>> b108ac4cfb682f38ffab69272cf916cea4fc2010
 		</form>
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 			<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>

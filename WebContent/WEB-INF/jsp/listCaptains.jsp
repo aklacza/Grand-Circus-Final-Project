@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>List of captains</title>
+<title>Boat Gallery</title>
 <link rel="stylesheet"
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
@@ -37,14 +37,14 @@ a:-webkit-any-link {
 }
 
 .fade {
-	opacity: 0.8; /* sets default view to a 80% opacity */
+	opacity: 1; /* sets default view to a 80% opacity */
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 }
 
 .fade:hover {
-	opacity: 1;
+	opacity: .8;
 	/* sets default view to a 100% opacity when on hover state */
 }
 
@@ -140,7 +140,7 @@ h4{
 			<h1 class="tbackground2">Boat gallery:</h1>
 			<div></div>
 		</div>
-	</div>
+	
 	<div class="boat-guides">
 		<div class="container">
 			<div class="gallery-wrapper">
@@ -165,6 +165,7 @@ h4{
 				</ul>
 			</div>
 		</div>
+	</div>
 	</div>
 
 	<script type="text/javascript">
