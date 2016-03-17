@@ -15,18 +15,21 @@
 
 <style>
 .thumbnail{
-	background:#3498db 
+	background: rgba(52,152,219, .8);
 /* 	rgba(255, 255, 255, .5); */
+border-radius: 8px ;
+border: 0px;
 	
 }
 
 .thumbnail img{
 opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+	border-radius: 8px ;
+	
 
 }
-
 
 .thumbnail:hover img{
 opacity: .5;
@@ -40,10 +43,6 @@ opacity: .5;
 .row p{
 	size: 10;
 	color: #09C;
-}
-
-.smalltext{
-font-size: 10;
 }
 
 </style>
@@ -164,11 +163,12 @@ font-size: 10;
 					<p>From Verified ID to our customer support team, we've got
 						your back!</p>
 					<p>
-						<a href="help.html">Learn about trust at Boat Buddy</a>
+						<a href="help.html">Learn about trust at Boat Buddy</a><br>
+					<a	href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook
+						of Michigan Boating Laws</a>
+					
 					</p>
-					<a
-						href="https://www.boat-ed.com/assets/pdf/handbook/mi_handbook_entire.pdf">Handbook
-						of Michigan Boating Laws</a> <br>
+					
 				</div>
 				<div class="col-md-4">
 					<h3>Share us on Facebook!</h3>

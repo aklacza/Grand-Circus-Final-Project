@@ -9,7 +9,13 @@
 }
 
 .nav {
-	
+	box-shadow: 0 3px 3px -2px black;
+	margin-bottom: 5px;
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	display: block;
+	z-index: 9999;
 }
 
 
@@ -91,13 +97,13 @@
 }
 
 .jumbotron p {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   font-weight: bold;
 }
 
 .boat-guides {
-    background-color:#bedcfa;
+    background-color: rgba(190,220,250, .75);
     border-bottom:1px solid #dbdbdb;
     background-attachment: fixed;
 }
@@ -113,7 +119,7 @@
 }
 
 .learn-more {
-  background-color: #f7f7f7;
+  background-color: rgba(247,247,247, .9);
 }
 
 .learn-more h3 {
