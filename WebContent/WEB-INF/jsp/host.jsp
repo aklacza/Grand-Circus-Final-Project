@@ -11,7 +11,7 @@
 </head>
 </head>
 <body>
-	<div class="nav">
+		<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
 				<li><img src="img/logo.png" height=50px width=50px><a

@@ -24,7 +24,7 @@ th, td {
 }
 
 body {
-	font-family: "Aller", "sans-serif"; /* just a custom font */
+	/* font-family: "Aller", "sans-serif"; /* just a custom font */
 }
 
 ul {
@@ -85,7 +85,20 @@ margin-top: 4px;
 }
 
 p {
-	margin-left: 10px
+	margin-left: 10px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #09C;
+}
+
+h4{
+	font-family: Tahoma, Geneva, sans-serif;
+	line-height: 24px;
+	font-weight: bold;
+	color: #09C;
+
 }
 </style>
 
@@ -103,7 +116,7 @@ p {
 </head>
 <body>
 
-	<div class="nav">
+		<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
 				<li><img src="img/logo.png" height=50px width=50px><a
