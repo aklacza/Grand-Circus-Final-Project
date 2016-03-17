@@ -45,6 +45,10 @@ opacity: .5;
 	color: #09C;
 }
 
+.jumbotron p{
+	color: white;
+}
+
 </style>
 </head>
 <body>
@@ -67,9 +71,9 @@ opacity: .5;
 	</div>
 
 	<div class="jumbotron">
-		<div class="container" style="padding-bottom: 30px;">
+		<div class="container" style="padding-bottom: 30px; ">
 			<h1 class="tbackground2">Find a Boat near you!</h1>
-			<p class="tbackground2">Boat Buddy connects people to unique
+			<p class="tbackground2" >Boat Buddy connects people to unique
 				water experiences! Whether you are a boat owner
 				or are looking to hit the water, you can enjoy endless sunsets,
 				fishing trips and weekend excursions on Michigan's most popular
@@ -109,8 +113,7 @@ opacity: .5;
 
 	<div class="boat-guides">
 		<div class="container">
-			<h2>Sneak peak to your next weekend adventure!</h2>
-			<p>Not sure which to pick? Go to our learn more section!</p>
+			<h2>Pick a boat for your next adventure!</h2>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
