@@ -11,6 +11,14 @@
 
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/hover.css">
+<style>
+.thumbnail{
+	background: rgba(255,255,255, .5);
+}
+
+</style>
+
+
 </head>
 <body>
 
@@ -54,7 +62,7 @@
 					</div>
 					<h5>Explore Lake Saint Clair with Andrew!</h5>
 					<div class="thumbnail">
-					<a href="listCaptainsByType?type=motor"><img
+					<a href="listCaptainsByType?type=sail"><img
 							title="Search for Sail Boats" src="img/sailing-yacht-171900_640.jpg"></a>
 					</div>
 				</div>
@@ -66,7 +74,7 @@
 					<h5>Relax in style with Diana!</h5>
 					<div class="thumbnail">
 						<a href="listCaptainsByType?type=motor"><img
-							title="Search for Yachts" src="img/DMyacht.jpg"></a>
+							title="Search for Motor Boats" src="img/DMyacht.jpg"></a>
 					</div>
 				</div>
 				
@@ -77,7 +85,7 @@
 					</div>
 					<h5>Chill after work with Matt!</h5>
 					<div class="thumbnail">
-						<a href="listCaptainsByType?type=motor"><img
+						<a href="listCaptainsByType?type=pontoon"><img
 							title="Search for Pontoon Boats" src="img/pontoon-891830_640.jpg"></a>
 					</div>
 				</div>
