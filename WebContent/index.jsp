@@ -88,7 +88,10 @@ opacity: .5;
 					<input type="submit" class="tbackground1" value="Search"
 						style="float: right" >
 					<p style="float: left; padding-right: 8px">Search for a </p>
-					<select	name="searchType" style="float: left" class="tbackground1">
+						<select	name="searchType" style="float: left;
+						 position: relative;
+  							top: 50%;" 
+  							 class="tbackground1">
 							<option style="float: right" selected="selected" value="Motor Boat">Motor Boat</option>
 							<option value="Sail Boat">Sail Boat</option>
 							<option value="Pontoon Boat">Pontoon Boat</option>
