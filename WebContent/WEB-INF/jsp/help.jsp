@@ -70,7 +70,7 @@
 </div>
 	<div class="boat-guides">
 		<div class="container">		
-		<h4 class="tbackground2" style="centered">Boat Buddy's is located at: 1570 Woodward Avenue Detroit, MI 48226 <a href="http://www.grandcircus.co/">www.grandcircus.co</a></h4><br>	
+		<h4 style="centered">Boat Buddy's is located at: 1570 Woodward Avenue Detroit, MI 48226 <a href="http://www.grandcircus.co/">www.grandcircus.co</a></h4><br>	
 		</div>
 	</div>
 

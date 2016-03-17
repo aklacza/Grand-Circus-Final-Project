@@ -161,7 +161,7 @@ opacity: .5;
 	</div>
 
 	<div class="learn-more">
-		<div class="container" style="transparency: 0.5; padding-bottom:15px;">
+		<div class="container" style="transparency: 0.6; padding-bottom:15px;">
 			<div class="row">
 
 				<div class="col-md-4">
