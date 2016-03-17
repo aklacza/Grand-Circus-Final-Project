@@ -8,25 +8,24 @@
 <link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/hover.css">
 </head>
 </head>
 <body>
 		<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><img src="img/logo.png" height=50px width=50px><a
+				<li><img src="img/logo.png" height=50px width=50px><a class="hvr-underline-from-left"
 					href="index.jsp">Boat Buddy</a></li>
-				
-				
 			</ul>
-			<ul class="pull-right">
-			<li><a href="aboutUs.jsp">About Us</a></li>
-				<li><a href="host.html">Become a Host</a></li>
-				<li><a href="signup.html">Become a Shipmate</a></li>
-				<li><a href="login.html">Log In</a></li>
-			<li><a href="boatGallery.html">Boat Gallery</a></li>
-				<li><a href="help.html">Help</a></li>
 
+			<ul class="pull-right">
+				<li><a class="hvr-underline-from-left" href="aboutUs.jsp">About Us</a></li>
+				<li><a class="hvr-underline-from-left" href="host.html">Become a Host</a></li>
+				<li><a class="hvr-underline-from-left" href="signup.html">Become a Shipmate</a></li>
+				<li><a class="hvr-underline-from-left" href="login.html">Log In</a></li>
+				<li><a class="hvr-underline-from-left" href="boatGallery.html">Boat Gallery</a></li>
+				<li><a class="hvr-underline-from-left" href="help.html">Help</a></li>
 			</ul>
 		</div>
 	</div>
@@ -60,9 +59,16 @@
 		    	   <input type="radio" name="type" value="Jet Ski"> Jet Ski<br>
 		    	   <input type="radio" name="type" value="Canoe"> Canoe<br>
 		    	   <input type="radio" name="type" value="Kayak"> Kayak<br>
+<<<<<<< HEAD
 		Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/><br>
 		<br><input type="submit" name="Submit" value="Become a host!"/><br>
 		<br><p style="color: gray">Already registered? <a href="signup.html"> Sign in </a></p>
+=======
+			<br>
+			Brief Profile:<br><input type="text" name="profile" size="30" style="height: 5em"/>
+		<br><input type="submit" name="Submit" value="Become a host!"/>
+		<p style="color: #09C;">Already registered? <a href="signup.html"> Sign in </a></p>
+>>>>>>> b108ac4cfb682f38ffab69272cf916cea4fc2010
 		</form>
 			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 			<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>

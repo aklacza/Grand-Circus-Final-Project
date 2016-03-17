@@ -10,6 +10,7 @@
 <link rel="stylesheet"
 	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="/BoatApp/css/main.css">
+<link rel="stylesheet" href="css/hover.css">
 
 <link rel="stylesheet" type="text/css" media="screen"
 	href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
@@ -101,21 +102,20 @@ h4{
 </head>
 <body>
 
-
-
-	<div style="padding-top: 7px;" class="nav">
+<div style="padding-top: 7px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><img height=50px width=50px src="img/logo.png"><a
+				<li><img src="img/logo.png" height=50px width=50px><a class="hvr-underline-from-left"
 					href="index.jsp">Boat Buddy</a></li>
 			</ul>
+
 			<ul class="pull-right">
-				<li><a href="aboutUs.jsp">About Us</a></li>
-				<li><a href="host.html">Become a Host</a></li>
-				<li><a href="signup.html">Become a Shipmate</a></li>
-				<li><a href="login.html">Log In</a></li>
-				<li><a href="boatGallery.html">Gallery</a></li>
-				<li><a href="help.html">Help</a></li>
+				<li><a class="hvr-underline-from-left" href="aboutUs.jsp">About Us</a></li>
+				<li><a class="hvr-underline-from-left" href="host.html">Become a Host</a></li>
+				<li><a class="hvr-underline-from-left" href="signup.html">Become a Shipmate</a></li>
+				<li><a class="hvr-underline-from-left" href="login.html">Log In</a></li>
+				<li><a class="hvr-underline-from-left" href="boatGallery.html">Boat Gallery</a></li>
+				<li><a class="hvr-underline-from-left" href="help.html">Help</a></li>
 			</ul>
 		</div>
 	</div>
