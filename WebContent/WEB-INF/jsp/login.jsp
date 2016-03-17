@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	<div style="padding-top: 7px;" class="nav">
+	<div style="padding-top: 3px;" class="nav">
 		<div class="container">
 			<ul class="pull-left">
 				<li><img src="img/logo.png" height=50px width=50px><a class="hvr-underline-from-left"
