@@ -119,6 +119,9 @@
   color: #00b0ff;
 }
 
+.h3 {
+	color: white;
+}
 form#signupForm{
   background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
   background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
