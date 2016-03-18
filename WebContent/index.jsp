@@ -56,6 +56,14 @@ opacity: .5;
 	color: white;
 }
 
+.textdiv{
+border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  background-color: rgba(0,153,204, 0.8);
+  
+}
+
 </style>
 </head>
 <body>
@@ -80,11 +88,13 @@ opacity: .5;
 	<div class="jumbotron">
 		<div class="container" style="padding-bottom: 30px; ">
 			<h1 class="tbackground2">Find a Boat near you!</h1>
+			
 			<p class="tbackground2 white" >Boat Buddy connects people to unique
 				water experiences! Whether you are a boat owner
 				or are looking to hit the water, you can enjoy endless sunsets,
 				fishing trips and weekend excursions on Michigan's most popular
 				lakes!</p>
+			
 			<a href="learnMore.html" class="tbackground1"><span>Learn
 					more </span></a> <br>
 
