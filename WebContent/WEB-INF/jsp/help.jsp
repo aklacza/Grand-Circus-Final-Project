@@ -30,7 +30,7 @@
 
 <div class="jumbotron">
 		<div class="container">
-			<h1 class="tbackground2">We want to here from you!</h1>
+			<h1 class="tbackground2">We want to hear from you!</h1>
 			<h4 class="tbackground1"><a href="mailto:boatbuddydetroit@gmail.com?Subject=Hello%20again" target="_top">Email us at: boatbuddydetroit@gmail.com</a></h4><br>
 		
 			

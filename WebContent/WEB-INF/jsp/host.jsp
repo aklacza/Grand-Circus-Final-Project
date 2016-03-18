@@ -9,7 +9,11 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/hover.css">
-</head>
+<style>
+.white{
+	color: white;
+}
+</style>
 </head>
 <body>
 		<div style="padding-top: 7px;" class="nav">
@@ -33,7 +37,7 @@
     	<div class="jumbotron" style="height: 100%;">
 		<div class="container">
 			<h1 class="tbackground2">Become a Buddy Host!</h1>
-			<p class="tbackground2">Sign up to rent your boat to Shipmates near you!</p>
+			<p class="tbackground2 white" >Sign up to rent your boat to Shipmates near you!</p>
 				</div><br>
 		<div class="container">
 			<form id="hostSignup" action="${pageContext.request.contextPath}/hostSubmit" enctype="multipart/form-data" method="POST">
@@ -43,7 +47,7 @@
 			E-mail (this is your username for Login: <br><input type="text" name="email" size="30"/><br>
 			Password: <br><input type="password" name="password" size="30"required/><br>
 	
-			<br><p style="color:gray">Tell us about your Boat!</p>
+			<br><p style="color:#09C;">Tell us about your Boat!</p>
 			Please select a picture to upload : <input type="file" name="file" size="20"/></br>
 			
 			Boat Address: <br><input type="text" name="address" size="30"/><br>

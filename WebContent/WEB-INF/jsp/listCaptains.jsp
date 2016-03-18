@@ -63,7 +63,7 @@ h4 { /* style the photos titles */
 }
 
 h1 { /* just a main title alignment */
-	padding-left: 10em;
+	text-align: center;
 }
 
 .img-wrapper { /* this will be the wrapping box */
