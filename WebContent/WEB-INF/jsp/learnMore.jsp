@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/hover.css">
 
 <style>
-.white h1 p{
+.white {
 	color: white;
 }
 </style>
@@ -38,10 +38,10 @@
 	
 
 	<div class="jumbotron">
-		<div class="container white">
+		<div class="container ">
 			<h1 class="tbackground2">What is Boat Buddy?</h1>
-			<p class="tbackground2"> How many times have you gone to the marina on a beautiful summer day, and seen a marina full of boats?</p>
-			<p class="tbackground2"> Boat buddy was envisioned to solve this problem by connecting people who own boats (Boat Hosts) with people who want to go boating: Shipmates</p>
+			<p class="tbackground2 white"> How many times have you gone to the marina on a beautiful summer day, and seen a marina full of boats?</p>
+			<p class="tbackground2 white"> Boat buddy was envisioned to solve this problem by connecting people who own boats (Boat Hosts) with people who want to go boating: Shipmates</p>
 		</div>
 		<div class="boat-guides">
 			<div class="container">
